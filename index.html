@@ -136,15 +136,15 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(10, 15, 29, 0.9);
-            backdrop-filter: blur(15px);
+            background: rgba(10, 15, 29, 0.7);
+            backdrop-filter: blur(25px);
             z-index: 1000;
             display: none;
             justify-content: center;
             align-items: center;
             padding: 20px;
             opacity: 0;
-            transition: opacity 0.3s ease;
+            transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
         }
 
         .modal.active {
@@ -153,20 +153,21 @@
         }
 
         .modal-content {
-            background: var(--glass-bg);
-            border: 1px solid var(--primary-accent);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(34, 197, 94, 0.3);
             border-radius: 30px;
             padding: 40px;
             max-width: 600px;
             width: 100%;
             position: relative;
-            transform: scale(0.9);
-            transition: transform 0.3s ease;
-            box-shadow: 0 0 30px var(--primary-accent-glow);
+            transform: scale(0.9) translateY(20px);
+            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 20px var(--primary-accent-glow);
+            backdrop-filter: blur(10px);
         }
 
         .modal.active .modal-content {
-            transform: scale(1);
+            transform: scale(1) translateY(0);
         }
 
         .close-modal {
@@ -399,6 +400,37 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        @keyframes modalContentFadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .modal.active .modal-title,
+        .modal.active .modal-desc,
+        .modal.active .modal-specs,
+        .modal.active .modal-caution {
+            animation: modalContentFadeIn 0.5s ease-out forwards;
+        }
+
+        .modal.active .modal-title { animation-delay: 0.1s; }
+        .modal.active .modal-desc { animation-delay: 0.2s; }
+        .modal.active .modal-specs { animation-delay: 0.3s; }
+        .modal.active .modal-caution { animation-delay: 0.4s; }
+
+        /* Define initial state for modal elements to prevent flicker */
+        .modal-title, .modal-desc, .modal-specs, .modal-caution {
+            opacity: 0;
+        }
+
+        /* Efeito de Voo da Imagem */
+        .img-fly {
+            position: fixed;
+            z-index: 2000;
+            pointer-events: none;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            object-fit: contain;
+        }
+
         /*
            RESPONSIVIDADE
         */
@@ -414,10 +446,6 @@
 </head>
 <body>
 
-    <div class="bg-visuals">
-        <div class="bubble bubble-1"></div>
-        <div class="bubble bubble-2"></div>
-        <div class="bubble bubble-3"></div>
     </div>
 
     <header>
@@ -440,15 +468,19 @@
                         <img src="fotos/Sabonete Líquido Only Start.webp" class="product-img" alt="Sabonete Líquido">
                     </div>
                     <div class="product-name">Sabonete Líquido Only Start</div>
-                    <p class="product-desc">Higiene de alta performance com fragrâncias que proporcionam uma experiência sensorial de luxo e relaxamento.</p>
+                    <p class="product-desc">Sinergia entre higiene profunda e terapia sensorial. Desenvolvido com agentes surfactantes suaves que removem impurezas sem agredir a barreira cutânea.</p>
                     <div class="tech-specs">
                         <div class="spec-item">
                             <span class="spec-label">Variedades</span>
                             <span class="spec-value">Camomila com Mel, Morango, Paris, Provence e Neutralizador.</span>
                         </div>
                         <div class="spec-item">
-                            <span class="spec-label">Diferencial</span>
-                            <span class="spec-value">pH balanceado para preservação da camada lipídica da pele.</span>
+                            <span class="spec-label">Diferencial Técnico</span>
+                            <span class="spec-value">pH balanceado e agentes hidratantes que previnem a perda de água transepidérmica.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Aplicação</span>
+                            <span class="spec-value">Uso diário corporal. Massagear sobre a pele úmida e enxaguar.</span>
                         </div>
                     </div>
                     <div class="caution-box">⚠️ Não aplicar em mucosas ou peles com ferimentos abertos.</div>
@@ -460,15 +492,19 @@
                         <img src="fotos/Sabonete em Barra Only Start Viena.webp" class="product-img" alt="Sabonete Barra">
                     </div>
                     <div class="product-name">Sabonete em Barra Only Start Viena</div>
-                    <p class="product-desc">Limpeza profunda com toque aveludado, utilizando a tradição europeia para um cuidado diário superior.</p>
+                    <p class="product-desc">A excelência da saboaria europeia adaptada ao clima tropical. Limpeza densa com toque aveludado para regeneração da pele.</p>
                     <div class="tech-specs">
                         <div class="spec-item">
                             <span class="spec-label">Peso</span>
-                            <span class="spec-value">80g de alta densidade (maior durabilidade).</span>
+                            <span class="spec-value">80g de alta densidade (maior durabilidade e menos desperdício).</span>
                         </div>
                         <div class="spec-item">
-                            <span class="spec-label">Ação</span>
-                            <span class="spec-value">Remoção de impurezas sem ressecamento cutâneo.</span>
+                            <span class="spec-label">Ação Primária</span>
+                            <span class="spec-value">Remoção profunda de detritos sem ressecamento cutâneo.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Uso Indicado</span>
+                            <span class="spec-value">Ideal para peles sensíveis que buscam limpeza vigorosa porém suave.</span>
                         </div>
                     </div>
                     <div class="caution-box">⚠️ Evitar contato prolongado com mucosas oculares.</div>
@@ -488,15 +524,19 @@
                         <img src="fotos/Desentupidor Start Pro.webp" class="product-img" alt="Desentupidor">
                     </div>
                     <div class="product-name">Desentupidor Start Pro</div>
-                    <p class="product-desc">Engenharia química agressiva para dissolver obstruções orgânicas complexas instantaneamente.</p>
+                    <p class="product-desc">Engenharia química de alta potência projetada para a dissolução instantânea de obstruções orgânicas complexas.</p>
                     <div class="tech-specs">
                         <div class="spec-item">
                             <span class="spec-label">Composição</span>
-                            <span class="spec-value">Agente químico alcalino de alta potência.</span>
+                            <span class="spec-value">Sinergia de agentes alcalinos concentrados de alta reatividade.</span>
                         </div>
                         <div class="spec-item">
-                            <span class="spec-label">Aplicação</span>
-                            <span class="spec-value">Ideal para gorduras, cabelos e detritos orgânicos.</span>
+                            <span class="spec-label">Ação Principal</span>
+                            <span class="spec-value">Degradação química de gorduras, cabelos e detritos orgânicos.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Indicação</span>
+                            <span class="spec-value">Ideal para pias, ralos e tubulações residenciais ou comerciais.</span>
                         </div>
                     </div>
                     <div class="caution-box">⚠️ Não use em tubulações de alumínio. Nunca misture com outros ácidos.</div>
@@ -508,15 +548,19 @@
                         <img src="fotos/Tira Ferrugem Azulim.webp" class="product-img" alt="Tira Ferrugem">
                     </div>
                     <div class="product-name">Tira Ferrugem Azulim</div>
-                    <p class="product-desc">Tecnologia quelante que isola e remove óxidos de ferro sem a necessidade de abrasão mecânica.</p>
+                    <p class="product-desc">Tecnologia quelante avançada que isola e remove óxidos de ferro sem a necessidade de abrasão mecânica, preservando a superfície.</p>
                     <div class="tech-specs">
                         <div class="spec-item">
-                            <span class="spec-label">Mecanismo</span>
-                            <span class="spec-value">Reação química ácida específica para oxidação metálica.</span>
+                            <span class="spec-label">Mecanismo Técnico</span>
+                            <span class="spec-value">Reação química ácida específica para a desoxidação metálica.</span>
                         </div>
                         <div class="spec-item">
                             <span class="spec-label">Resultado</span>
-                            <span class="spec-value">Recuperação imediata do brilho original do metal.</span>
+                            <span class="spec-value">Recuperação imediata do brilho original e remoção total de manchas.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Indicação</span>
+                            <span class="spec-value">Metais ferrosos, ferramentas e superfícies oxidadas.</span>
                         </div>
                     </div>
                     <div class="caution-box">⚠️ Não deixar agir excessivamente em metais delicados. Lavar após uso.</div>
@@ -528,15 +572,19 @@
                         <img src="fotos/Remov. Mágico Sujeira Pesada.webp" class="product-img" alt="Remov Mágico">
                     </div>
                     <div class="product-name">Remov. Mágico Sujeira Pesada</div>
-                    <p class="product-desc">O ápice da desengorduração. Projetado para romper moléculas de gordura carbonizada em cozinhas.</p>
+                    <p class="product-desc">O ápice da desengorduração industrial. Projetado para romper moléculas de gordura carbonizada em ambientes de alta demanda.</p>
                     <div class="tech-specs">
                         <div class="spec-item">
-                            <span class="spec-label">Ação</span>
-                            <span class="spec-value">Detergente alcalino concentrado de alta performance.</span>
+                            <span class="spec-label">Ação Química</span>
+                            <span class="spec-value">Detergente alcalino concentrado de ultra performance.</span>
                         </div>
                         <div class="spec-item">
-                            <span class="spec-label">Indicado</span>
-                            <span class="spec-value">Cozinhas industriais, garagens e áreas gourmet.</span>
+                            <span class="spec-label">Indicação de Uso</span>
+                            <span class="spec-value">Cozinhas industriais, garagens, fornos e áreas gourmet.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Vantagem</span>
+                            <span class="spec-value">Redução drástica no tempo de esfregação e esforço manual.</span>
                         </div>
                     </div>
                     <div class="caution-box">⚠️ Não utilizar em superfícies pintadas ou alumínio polido.</div>
@@ -548,15 +596,19 @@
                         <img src="fotos/LIMPA FORNOS E MICRO-ONDAS AZULIM 12X500ML.png" class="product-img" alt="Limpa Air Fryer">
                     </div>
                     <div class="product-name">Limpa Air Fryer / Forno</div>
-                    <p class="product-desc">Ação rápida de quebra de moléculas de gordura, eliminando a necessidade de esforço manual intenso.</p>
+                    <p class="product-desc">Ação rápida de quebra de moléculas de gordura, eliminando a necessidade de esforço manual intenso em superfícies delicadas.</p>
                     <div class="tech-specs">
                         <div class="spec-item">
-                            <span class="spec-label">Formato</span>
-                            <span class="spec-value">Spray de alta pressão para penetração em frestas.</span>
+                            <span class="spec-label">Aplicação</span>
+                            <span class="spec-value">Spray de alta pressão para penetração profunda em frestas.</span>
                         </div>
                         <div class="spec-item">
                             <span class="spec-label">Eficiência</span>
                             <span class="spec-value">Remoção de resíduos carbonizados e gorduras antigas.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Indicado para</span>
+                            <span class="spec-value">Air Fryers, micro-ondas, fornos e coifas.</span>
                         </div>
                     </div>
                     <div class="caution-box">⚠️ Evite telas de controle eletrônico e borrachas de vedação.</div>
@@ -575,11 +627,19 @@
                         <img src="fotos/Limpa Cerâmicas e Azulejos.png" class="product-img" alt="Limpa Cerâmicas">
                     </div>
                     <div class="product-name">Limpa Cerâmicas e Azulejos</div>
-                    <p class="product-desc">Remoção de névoas de gordura e calcário, devolvendo a luminosidade original às superfícies.</p>
+                    <p class="product-desc">Ação detergente especializada na remoção de névoas de gordura e depósitos calcários, devolvendo a luminosidade original às superfícies.</p>
                     <div class="tech-specs">
                         <div class="spec-item">
                             <span class="spec-label">pH</span>
-                            <span class="spec-value">Balanceado para cerâmicas e azulejos.</span>
+                            <span class="spec-value">Balanceado para preservação de cerâmicas e azulejos.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Vantagem</span>
+                            <span class="spec-value">Não deixa resíduos esbranquiçados após a secagem.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Indicação</span>
+                            <span class="spec-value">Banheiros, cozinhas e áreas externas com azulejos.</span>
                         </div>
                     </div>
                     <div class="caution-box">⚠️ Não indicado para pedras naturais porosas não tratadas.</div>
@@ -590,11 +650,19 @@
                         <img src="fotos/Limpa Pisos Laminados e Vinílicos.webp" class="product-img" alt="Laminados">
                     </div>
                     <div class="product-name">Limpa Pisos Laminados</div>
-                    <p class="product-desc">Proteção avançada que evita a infiltração de água, prevenindo o estufamento do piso.</p>
+                    <p class="product-desc">Proteção avançada com tecnologia de baixa umidade que evita a infiltração de água, prevenindo o estufamento do piso e prolongando sua vida útil.</p>
                     <div class="tech-specs">
                         <div class="spec-item">
                             <span class="spec-label">Secagem</span>
-                            <span class="spec-value">Rápida evaporação com baixo teor de água.</span>
+                            <span class="spec-value">Evaporação ultra-rápida para evitar danos por água.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Ação</span>
+                            <span class="spec-value">Limpeza suave com agente protetor de superfície.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Diferencial</span>
+                            <span class="spec-value">Mantém o aspecto de novo sem criar camadas gordurosas.</span>
                         </div>
                     </div>
                     <div class="caution-box">⚠️ Não utilizar esponjas abrasivas.</div>
@@ -605,11 +673,19 @@
                         <img src="fotos/Limpa Porcelanato Lavanda.webp" class="product-img" alt="Porcelanato">
                     </div>
                     <div class="product-name">Limpa Porcelanato Lavanda</div>
-                    <p class="product-desc">Preserva a integridade do brilho do porcelanato, eliminando manchas esbranquiçadas.</p>
+                    <p class="product-desc">Fórmula de alta precisão que preserva a integridade do brilho do porcelanato, eliminando manchas esbranquiçadas e resíduos de obra.</p>
                     <div class="tech-specs">
                         <div class="spec-item">
                             <span class="spec-label">Fragrância</span>
-                            <span class="spec-value">Lavanda relaxante de longa duração.</span>
+                            <span class="spec-value">Lavanda relaxante com fixação de longa duração.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Ação Química</span>
+                            <span class="spec-value">Remoção de gorduras sem agredir o esmalte do piso.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Indicação</span>
+                            <span class="spec-value">Ideal para porcelanatos polidos e acetinados.</span>
                         </div>
                     </div>
                     <div class="caution-box">⚠️ Não utilizar produtos ácidos sobre o porcelanato.</div>
@@ -620,11 +696,19 @@
                         <img src="fotos/Limpa Rejuntes Start.webp" class="product-img" alt="Rejuntes">
                     </div>
                     <div class="product-name">Limpa Rejuntes Start</div>
-                    <p class="product-desc">Ação profunda nos poros do rejunte, removendo o encardido e restaurando a cor original.</p>
+                    <p class="product-desc">Poder de penetração profunda nos poros do rejunte, removendo o encardido acumulado e restaurando a cor original do material.</p>
                     <div class="tech-specs">
                         <div class="spec-item">
-                            <span class="spec-label">Poder</span>
+                            <span class="spec-label">Poder de Ação</span>
                             <span class="spec-value">Agente de penetração profunda em porosidades.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Resultado</span>
+                            <span class="spec-value">Remoção de fungos e detritos orgânicos profundos.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Indicado para</span>
+                            <span class="spec-value">Rejuntes de cerâmicas, azulejos e porcelanatos.</span>
                         </div>
                     </div>
                     <div class="caution-box">⚠️ Não usar em rejuntes quebrados ou soltando.</div>
@@ -635,11 +719,19 @@
                         <img src="fotos/Limpador em Gel Pinho.webp" class="product-img" alt="Gel Pinho">
                     </div>
                     <div class="product-name">Limpador em Gel Pinho</div>
-                    <p class="product-desc">A eficiência do desinfetante com a densidade do gel, proporcionando maior rendimento e aroma duradouro.</p>
+                    <p class="product-desc">A eficiência do desinfetante com a densidade do gel, proporcionando maior rendimento, menor desperdício e aroma duradouro.</p>
                     <div class="tech-specs">
                         <div class="spec-item">
                             <span class="spec-label">Tipo</span>
-                            <span class="spec-value">Detergente desinfetante em base de gel.</span>
+                            <span class="spec-value">Detergente desinfetante em base de gel de alta viscosidade.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Ação</span>
+                            <span class="spec-value">Desinfecção profunda com fragrância prolongada.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Rendimento</span>
+                            <span class="spec-value">Alta aderência à superfície, reduzindo a quantidade de produto.</span>
                         </div>
                     </div>
                     <div class="caution-box">⚠️ Cuidado em superfícies que mancham com corantes.</div>
@@ -658,15 +750,19 @@
                         <img src="fotos/Multiuso Original Álcool  Clareador.webp" class="product-img" alt="Multiuso">
                     </div>
                     <div class="product-name">Multiuso / Álcool / Clareador</div>
-                    <p class="product-desc">Versatilidade absoluta para a rotina diária, removendo sujeiras rápidas com eficiência máxima.</p>
+                    <p class="product-desc">Equilíbrio perfeito entre eficiência de limpeza e segurança superficial. Formulado para a remoção rápida de resíduos cotidianos sem deixar rastros, ideal para superfícies que exigem brilho e pureza.</p>
                     <div class="tech-specs">
                         <div class="spec-item">
+                            <span class="spec-label">Ação Multiuso</span>
+                            <span class="spec-value">Sinergia de surfactantes que dissolvem gorduras leves e poeira instantaneamente.</span>
+                        </div>
+                        <div class="spec-item">
                             <span class="spec-label">Versão Álcool</span>
-                            <span class="spec-value">Secagem ultra-rápida.</span>
+                            <span class="spec-value">Evaporação ultra-rápida, ideal para desinfecção rápida e secagem imediata.</span>
                         </div>
                         <div class="spec-item">
                             <span class="spec-label">Versão Clareador</span>
-                            <span class="spec-value">Remoção de manchas superficiais.</span>
+                            <span class="spec-value">Agentes oxidantes suaves para remoção de manchas superficiais e realce de brancos.</span>
                         </div>
                     </div>
                     <div class="caution-box">⚠️ Não usar em seda, veludo ou superfícies porosas.</div>
@@ -677,11 +773,15 @@
                         <img src="fotos/Limpa Vidros Spray.webp" class="product-img" alt="Limpa Vidros">
                     </div>
                     <div class="product-name">Limpa Vidros Spray</div>
-                    <p class="product-desc">Efeito de transparência total. Remove digitais e gorduras sem deixar rastros ou manchas.</p>
+                    <p class="product-desc">Tecnologia de transparência absoluta. Desenvolvido para a remoção de gorduras e impressões digitais sem a formação de névoas, garantindo visibilidade cristalina em segundos.</p>
                     <div class="tech-specs">
                         <div class="spec-item">
-                            <span class="spec-label">Solvente</span>
-                            <span class="spec-value">Base alcoólica de evaporação imediata.</span>
+                            <span class="spec-label">Ação Química</span>
+                            <span class="spec-value">Solventes voláteis de alta pureza que evitam a redeposição de sujeira.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Resultado</span>
+                            <span class="spec-value">Acabamento invisível e brilho espelhado em vidros e espelhos.</span>
                         </div>
                     </div>
                     <div class="caution-box">⚠️ Não aplicar em molduras de madeira sem verniz.</div>
@@ -692,11 +792,15 @@
                         <img src="fotos/Kit Limpa Telas.webp" class="product-img" alt="Limpa Telas">
                     </div>
                     <div class="product-name">Kit Limpa Telas</div>
-                    <p class="product-desc">Proteção especializada para displays. Limpeza antiestática que remove poeira sem riscar a tela.</p>
+                    <p class="product-desc">Engenharia de proteção para displays de alta tecnologia. Limpeza antiestática avançada que remove partículas microscópicas sem comprometer as camadas oleofóbicas da tela.</p>
                     <div class="tech-specs">
                         <div class="spec-item">
-                            <span class="spec-label">Composição</span>
-                            <span class="spec-value">Livre de álcool e solventes agressivos.</span>
+                            <span class="spec-label">Segurança Técnica</span>
+                            <span class="spec-value">Livre de álcool e solventes corrosivos, preservando a vida útil do monitor.</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Efeito Antiestático</span>
+                            <span class="spec-value">Repelência prolongada contra a atração de poeira e partículas.</span>
                         </div>
                     </div>
                     <div class="caution-box">⚠️ Aplique o líquido no pano, nunca diretamente na tela.</div>
@@ -829,8 +933,21 @@
 
         document.querySelectorAll('.product-card').forEach(card => {
             card.addEventListener('click', () => {
+                const imgElement = card.querySelector('.product-img');
+                const imgRect = imgElement.getBoundingClientRect();
+
+                // 1. Criar a imagem "voadora"
+                const flyImg = document.createElement('img');
+                flyImg.src = imgElement.src;
+                flyImg.className = 'img-fly';
+                flyImg.style.top = imgRect.top + 'px';
+                flyImg.style.left = imgRect.left + 'px';
+                flyImg.style.width = imgRect.width + 'px';
+                flyImg.style.height = imgRect.height + 'px';
+                document.body.appendChild(flyImg);
+
                 // Captura dados do cartão clicado
-                const img = card.querySelector('.product-img').src;
+                const img = imgElement.src;
                 const name = card.querySelector('.product-name').innerText;
                 const desc = card.querySelector('.product-desc').innerText;
                 const caution = card.querySelector('.caution-box') ? card.querySelector('.caution-box').innerText : '';
@@ -847,7 +964,8 @@
                         </div>`;
                 });
 
-                // Preenche o modal
+                // Preenche o modal (escondendo a imagem final inicialmente)
+                modalImg.style.opacity = '0';
                 modalImg.src = img;
                 modalTitle.innerText = name;
                 modalDesc.innerText = desc;
@@ -856,7 +974,23 @@
 
                 // Abre o modal
                 modal.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Trava o scroll do fundo
+                document.body.style.overflow = 'hidden';
+
+                // 2. Animar a imagem voadora para a posição do modal
+                setTimeout(() => {
+                    const targetRect = modalImg.getBoundingClientRect();
+                    flyImg.style.top = targetRect.top + 'px';
+                    flyImg.style.left = targetRect.left + 'px';
+                    flyImg.style.width = targetRect.width + 'px';
+                    flyImg.style.height = targetRect.height + 'px';
+                }, 10);
+
+                // 3. Finalizar transição: remove voadora e mostra a real
+                setTimeout(() => {
+                    flyImg.remove();
+                    modalImg.style.opacity = '1';
+                    modalImg.style.transition = 'opacity 0.2s ease';
+                }, 500);
             });
         });
 
