@@ -432,19 +432,143 @@
         }
 
         /*
-           RESPONSIVIDADE
+           SISTEMA DE LOGIN (Overlay)
         */
-        @media (max-width: 768px) {
-            .product-grid {
-                grid-template-columns: 1fr;
-            }
-            .hero-title {
-                font-size: 2.8rem;
-            }
+        .login-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-dark);
+            z-index: 2001;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            backdrop-filter: blur(20px);
         }
+
+        .login-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+            transform: scale(1.1);
+        }
+
+        .login-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            backdrop-filter: blur(15px);
+            padding: 50px 40px;
+            border-radius: 40px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5), 0 0 20px var(--primary-accent-glow);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .login-card h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--text-main);
+            font-weight: 800;
+        }
+
+        .login-field {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .login-field label {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--primary-accent);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-left: 5px;
+        }
+
+        .login-field input {
+            width: 100%;
+            background: rgba(0,0,0,0.3);
+            border: 1px solid var(--glass-border);
+            padding: 15px 20px;
+            border-radius: 15px;
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .login-field input:focus {
+            outline: none;
+            border-color: var(--primary-accent);
+            box-shadow: 0 0 15px var(--primary-accent-glow);
+            background: rgba(0,0,0,0.5);
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--primary-accent);
+            color: var(--primary-dark);
+            border: none;
+            border-radius: 15px;
+            font-weight: 800;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px var(--primary-accent-glow);
+            filter: brightness(1.1);
+        }
+
+        .login-footer {
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .login-footer a {
+            color: var(--primary-accent);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .login-footer a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
+
+    <div id="loginOverlay" class="login-overlay">
+        <div class="login-card">
+            <h2>Acesso Restrito</h2>
+            <div class="login-field">
+                <label>Usuário</label>
+                <input type="text" id="loginUser" placeholder="Digite seu usuário...">
+            </div>
+            <div class="login-field">
+                <label>Senha</label>
+                <input type="password" id="loginPass" placeholder="••••••••">
+            </div>
+            <button class="login-btn" id="btnLogin">Entrar no Sistema</button>
+            <div class="login-footer">
+                Esqueceu a senha? <a href="#">Solicitar Recuperação</a>
+            </div>
+        </div>
+    </div>
 
     </div>
 
@@ -987,9 +1111,8 @@
 
                 // 3. Finalizar transição: remove voadora e mostra a real
                 setTimeout(() => {
-                    flyImg.remove();
                     modalImg.style.opacity = '1';
-                    modalImg.style.transition = 'opacity 0.2s ease';
+                    flyImg.remove();
                 }, 500);
             });
         });
@@ -1006,6 +1129,32 @@
                 modal.classList.remove('active');
                 document.body.style.overflow = 'auto';
             }
+        });
+
+        // LOGICA DO LOGIN
+        const loginOverlay = document.getElementById('loginOverlay');
+        const btnLogin = document.getElementById('btnLogin');
+        const loginUser = document.getElementById('loginUser');
+        const loginPass = document.getElementById('loginPass');
+
+        btnLogin.addEventListener('click', () => {
+            const user = loginUser.value.trim();
+            const pass = loginPass.value.trim();
+
+            if (user !== '' && pass !== '') {
+                // Simulação de login bem sucedido
+                loginOverlay.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            } else {
+                alert('Por favor, preencha todos os campos.');
+            }
+        });
+
+        // Permitir Enter para logar
+        [loginUser, loginPass].forEach(input => {
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') btnLogin.click();
+            });
         });
     </script>
 </body>
