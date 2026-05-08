@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:www.startquimica.com.br)"
+      "WebFetch(domain:www.startquimica.com.br)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'Fix: remove flicker during product image transition and add login overlay *)",
+      "Bash(git push *)"
     ]
   }
 }

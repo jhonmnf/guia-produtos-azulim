@@ -552,26 +552,6 @@
 </head>
 <body>
 
-    <div id="loginOverlay" class="login-overlay">
-        <div class="login-card">
-            <h2>Acesso Restrito</h2>
-            <div class="login-field">
-                <label>Usuário</label>
-                <input type="text" id="loginUser" placeholder="Digite seu usuário...">
-            </div>
-            <div class="login-field">
-                <label>Senha</label>
-                <input type="password" id="loginPass" placeholder="••••••••">
-            </div>
-            <button class="login-btn" id="btnLogin">Entrar no Sistema</button>
-            <div class="login-footer">
-                Esqueceu a senha? <a href="#">Solicitar Recuperação</a>
-            </div>
-        </div>
-    </div>
-
-    </div>
-
     <header>
         <h1 class="hero-title">Guia de Vendas<br>Azulim & Start</h1>
         <p class="hero-subtitle">A convergência entre química avançada e performance de limpeza. Explore a engenharia por trás de cada produto.</p>
@@ -1129,32 +1109,6 @@
                 modal.classList.remove('active');
                 document.body.style.overflow = 'auto';
             }
-        });
-
-        // LOGICA DO LOGIN
-        const loginOverlay = document.getElementById('loginOverlay');
-        const btnLogin = document.getElementById('btnLogin');
-        const loginUser = document.getElementById('loginUser');
-        const loginPass = document.getElementById('loginPass');
-
-        btnLogin.addEventListener('click', () => {
-            const user = loginUser.value.trim();
-            const pass = loginPass.value.trim();
-
-            if (user !== '' && pass !== '') {
-                // Simulação de login bem sucedido
-                loginOverlay.classList.add('hidden');
-                document.body.style.overflow = 'auto';
-            } else {
-                alert('Por favor, preencha todos os campos.');
-            }
-        });
-
-        // Permitir Enter para logar
-        [loginUser, loginPass].forEach(input => {
-            input.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') btnLogin.click();
-            });
         });
     </script>
 </body>
