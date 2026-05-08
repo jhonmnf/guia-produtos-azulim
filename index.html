@@ -104,8 +104,40 @@
             font-size: 1.2rem;
             color: var(--text-muted);
             max-width: 600px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             animation: fadeInUp 1.2s ease-out;
+        }
+
+        /* SEARCH BAR SYSTEM */
+        .search-container {
+            margin-bottom: 40px;
+            animation: fadeInUp 1.4s ease-out;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .search-bar {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(10px);
+            padding: 12px 25px;
+            border-radius: 100px;
+            width: 100%;
+            max-width: 500px;
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+            outline: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .search-bar:focus {
+            border-color: var(--primary-accent);
+            box-shadow: 0 0 20px var(--primary-accent-glow);
+            background: rgba(255, 255, 255, 0.08);
+            width: 550px;
         }
 
         /*
@@ -555,6 +587,9 @@
     <header>
         <h1 class="hero-title">Guia de Vendas<br>Azulim & Start</h1>
         <p class="hero-subtitle">A convergência entre química avançada e performance de limpeza. Explore a engenharia por trás de cada produto.</p>
+        <div class="search-container">
+            <input type="text" id="productSearch" class="search-bar" placeholder="Pesquisar produto ou tecnologia...">
+        </div>
         <div style="animation: bounce 2s infinite; color: var(--primary-accent); font-size: 2rem;">↓</div>
     </header>
 
@@ -1109,6 +1144,24 @@
                 modal.classList.remove('active');
                 document.body.style.overflow = 'auto';
             }
+        });
+
+        // LOGICA DE PESQUISA
+        const searchInput = document.getElementById('productSearch');
+        searchInput.addEventListener('input', () => {
+            const term = searchInput.value.toLowerCase();
+            const cards = document.querySelectorAll('.product-card');
+
+            cards.forEach(card => {
+                const name = card.querySelector('.product-name').innerText.toLowerCase();
+                const desc = card.querySelector('.product-desc').innerText.toLowerCase();
+
+                if (name.includes(term) || desc.includes(term)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
         });
     </script>
 </body>
