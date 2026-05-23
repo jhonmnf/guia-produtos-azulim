@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elite Guide | Azulim & Start</title>
+    <title>Guia de Produtos</title>
     <style>
         /*
            SISTEMA DE DESIGN - PALETA E VARIÁVEIS
@@ -58,7 +58,7 @@
             filter: blur(60px);
             border-radius: 50%;
             z-index: -1;
-            animation: move llinear infinite;
+            animation: move linear infinite;
         }
 
         .bubble-1 { width: 400px; height: 400px; top: -10%; left: -10%; animation-duration: 20s; }
@@ -449,7 +449,6 @@
         .modal.active .modal-specs { animation-delay: 0.3s; }
         .modal.active .modal-caution { animation-delay: 0.4s; }
 
-        /* Define initial state for modal elements to prevent flicker */
         .modal-title, .modal-desc, .modal-specs, .modal-caution {
             opacity: 0;
         }
@@ -579,13 +578,17 @@
         .login-footer a:hover {
             text-decoration: underline;
         }
-
     </style>
 </head>
 <body>
+    <div class="bg-visuals">
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+    </div>
 
     <header>
-        <h1 class="hero-title">Guia de Vendas<br>Azulim & Start</h1>
+        <h1 class="hero-title">Guia de Produtos</h1>
         <p class="hero-subtitle">A convergência entre química avançada e performance de limpeza. Explore a engenharia por trás de cada produto.</p>
         <div class="search-container">
             <input type="text" id="productSearch" class="search-bar" placeholder="Pesquisar produto ou tecnologia...">
@@ -593,443 +596,15 @@
         <div style="animation: bounce 2s infinite; color: var(--primary-accent); font-size: 2rem;">↓</div>
     </header>
 
-    <div class="container">
-
-        <!-- SEÇÃO: CUIDADOS PESSOAIS -->
-        <section class="category-section" id="pessoais">
-            <div class="category-header">
-                <h2>🧴 Cuidados Pessoais</h2>
-            </div>
-            <div class="product-grid">
-                <!-- Sabonete Líquido -->
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Sabonete Líquido Only Start.webp" class="product-img" alt="Sabonete Líquido">
-                    </div>
-                    <div class="product-name">Sabonete Líquido Only Start</div>
-                    <p class="product-desc">Sinergia entre higiene profunda e terapia sensorial. Desenvolvido com agentes surfactantes suaves que removem impurezas sem agredir a barreira cutânea.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Variedades</span>
-                            <span class="spec-value">Camomila com Mel, Morango, Paris, Provence e Neutralizador.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Diferencial Técnico</span>
-                            <span class="spec-value">pH balanceado e agentes hidratantes que previnem a perda de água transepidérmica.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Aplicação</span>
-                            <span class="spec-value">Uso diário corporal. Massagear sobre a pele úmida e enxaguar.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Não aplicar em mucosas ou peles com ferimentos abertos.</div>
-                </div>
-
-                <!-- Sabonete em Barra -->
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Sabonete em Barra Only Start Viena.webp" class="product-img" alt="Sabonete Barra">
-                    </div>
-                    <div class="product-name">Sabonete em Barra Only Start Viena</div>
-                    <p class="product-desc">A excelência da saboaria europeia adaptada ao clima tropical. Limpeza densa com toque aveludado para regeneração da pele.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Peso</span>
-                            <span class="spec-value">80g de alta densidade (maior durabilidade e menos desperdício).</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Ação Primária</span>
-                            <span class="spec-value">Remoção profunda de detritos sem ressecamento cutâneo.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Uso Indicado</span>
-                            <span class="spec-value">Ideal para peles sensíveis que buscam limpeza vigorosa porém suave.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Evitar contato prolongado com mucosas oculares.</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SEÇÃO: LIMPEZA PESADA -->
-        <section class="category-section" id="pesada">
-            <div class="category-header">
-                <h2>💥 Limpeza Pesada</h2>
-            </div>
-            <div class="product-grid">
-                <!-- Desentupidor -->
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Desentupidor Start Pro.webp" class="product-img" alt="Desentupidor">
-                    </div>
-                    <div class="product-name">Desentupidor Start Pro</div>
-                    <p class="product-desc">Engenharia química de alta potência projetada para a dissolução instantânea de obstruções orgânicas complexas.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Composição</span>
-                            <span class="spec-value">Sinergia de agentes alcalinos concentrados de alta reatividade.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Ação Principal</span>
-                            <span class="spec-value">Degradação química de gorduras, cabelos e detritos orgânicos.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Indicação</span>
-                            <span class="spec-value">Ideal para pias, ralos e tubulações residenciais ou comerciais.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Não use em tubulações de alumínio. Nunca misture com outros ácidos.</div>
-                </div>
-
-                <!-- Tira Ferrugem -->
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Tira Ferrugem Azulim.webp" class="product-img" alt="Tira Ferrugem">
-                    </div>
-                    <div class="product-name">Tira Ferrugem Azulim</div>
-                    <p class="product-desc">Tecnologia quelante avançada que isola e remove óxidos de ferro sem a necessidade de abrasão mecânica, preservando a superfície.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Mecanismo Técnico</span>
-                            <span class="spec-value">Reação química ácida específica para a desoxidação metálica.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Resultado</span>
-                            <span class="spec-value">Recuperação imediata do brilho original e remoção total de manchas.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Indicação</span>
-                            <span class="spec-value">Metais ferrosos, ferramentas e superfícies oxidadas.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Não deixar agir excessivamente em metais delicados. Lavar após uso.</div>
-                </div>
-
-                <!-- Remov Mágico -->
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Remov. Mágico Sujeira Pesada.webp" class="product-img" alt="Remov Mágico">
-                    </div>
-                    <div class="product-name">Remov. Mágico Sujeira Pesada</div>
-                    <p class="product-desc">O ápice da desengorduração industrial. Projetado para romper moléculas de gordura carbonizada em ambientes de alta demanda.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Ação Química</span>
-                            <span class="spec-value">Detergente alcalino concentrado de ultra performance.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Indicação de Uso</span>
-                            <span class="spec-value">Cozinhas industriais, garagens, fornos e áreas gourmet.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Vantagem</span>
-                            <span class="spec-value">Redução drástica no tempo de esfregação e esforço manual.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Não utilizar em superfícies pintadas ou alumínio polido.</div>
-                </div>
-
-                <!-- Limpa Air Fryer -->
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/LIMPA FORNOS E MICRO-ONDAS AZULIM 12X500ML.png" class="product-img" alt="Limpa Air Fryer">
-                    </div>
-                    <div class="product-name">Limpa Air Fryer / Forno</div>
-                    <p class="product-desc">Ação rápida de quebra de moléculas de gordura, eliminando a necessidade de esforço manual intenso em superfícies delicadas.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Aplicação</span>
-                            <span class="spec-value">Spray de alta pressão para penetração profunda em frestas.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Eficiência</span>
-                            <span class="spec-value">Remoção de resíduos carbonizados e gorduras antigas.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Indicado para</span>
-                            <span class="spec-value">Air Fryers, micro-ondas, fornos e coifas.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Evite telas de controle eletrônico e borrachas de vedação.</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SEÇÃO: PISOS E SUPERFÍCIES -->
-        <section class="category-section" id="pisos">
-            <div class="category-header">
-                <h2>🏠 Pisos & Superfícies</h2>
-            </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Limpa Cerâmicas e Azulejos.png" class="product-img" alt="Limpa Cerâmicas">
-                    </div>
-                    <div class="product-name">Limpa Cerâmicas e Azulejos</div>
-                    <p class="product-desc">Ação detergente especializada na remoção de névoas de gordura e depósitos calcários, devolvendo a luminosidade original às superfícies.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">pH</span>
-                            <span class="spec-value">Balanceado para preservação de cerâmicas e azulejos.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Vantagem</span>
-                            <span class="spec-value">Não deixa resíduos esbranquiçados após a secagem.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Indicação</span>
-                            <span class="spec-value">Banheiros, cozinhas e áreas externas com azulejos.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Não indicado para pedras naturais porosas não tratadas.</div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Limpa Pisos Laminados e Vinílicos.webp" class="product-img" alt="Laminados">
-                    </div>
-                    <div class="product-name">Limpa Pisos Laminados</div>
-                    <p class="product-desc">Proteção avançada com tecnologia de baixa umidade que evita a infiltração de água, prevenindo o estufamento do piso e prolongando sua vida útil.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Secagem</span>
-                            <span class="spec-value">Evaporação ultra-rápida para evitar danos por água.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Ação</span>
-                            <span class="spec-value">Limpeza suave com agente protetor de superfície.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Diferencial</span>
-                            <span class="spec-value">Mantém o aspecto de novo sem criar camadas gordurosas.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Não utilizar esponjas abrasivas.</div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Limpa Porcelanato Lavanda.webp" class="product-img" alt="Porcelanato">
-                    </div>
-                    <div class="product-name">Limpa Porcelanato Lavanda</div>
-                    <p class="product-desc">Fórmula de alta precisão que preserva a integridade do brilho do porcelanato, eliminando manchas esbranquiçadas e resíduos de obra.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Fragrância</span>
-                            <span class="spec-value">Lavanda relaxante com fixação de longa duração.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Ação Química</span>
-                            <span class="spec-value">Remoção de gorduras sem agredir o esmalte do piso.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Indicação</span>
-                            <span class="spec-value">Ideal para porcelanatos polidos e acetinados.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Não utilizar produtos ácidos sobre o porcelanato.</div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Limpa Rejuntes Start.webp" class="product-img" alt="Rejuntes">
-                    </div>
-                    <div class="product-name">Limpa Rejuntes Start</div>
-                    <p class="product-desc">Poder de penetração profunda nos poros do rejunte, removendo o encardido acumulado e restaurando a cor original do material.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Poder de Ação</span>
-                            <span class="spec-value">Agente de penetração profunda em porosidades.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Resultado</span>
-                            <span class="spec-value">Remoção de fungos e detritos orgânicos profundos.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Indicado para</span>
-                            <span class="spec-value">Rejuntes de cerâmicas, azulejos e porcelanatos.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Não usar em rejuntes quebrados ou soltando.</div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Limpador em Gel Pinho.webp" class="product-img" alt="Gel Pinho">
-                    </div>
-                    <div class="product-name">Limpador em Gel Pinho</div>
-                    <p class="product-desc">A eficiência do desinfetante com a densidade do gel, proporcionando maior rendimento, menor desperdício e aroma duradouro.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Tipo</span>
-                            <span class="spec-value">Detergente desinfetante em base de gel de alta viscosidade.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Ação</span>
-                            <span class="spec-value">Desinfecção profunda com fragrância prolongada.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Rendimento</span>
-                            <span class="spec-value">Alta aderência à superfície, reduzindo a quantidade de produto.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Cuidado em superfícies que mancham com corantes.</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SEÇÃO: MULTIUSOS E VIDROS -->
-        <section class="category-section" id="multiusos">
-            <div class="category-header">
-                <h2>✨ Multiusos & Vidros</h2>
-            </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Multiuso Original Álcool  Clareador.webp" class="product-img" alt="Multiuso">
-                    </div>
-                    <div class="product-name">Multiuso / Álcool / Clareador</div>
-                    <p class="product-desc">Equilíbrio perfeito entre eficiência de limpeza e segurança superficial. Formulado para a remoção rápida de resíduos cotidianos sem deixar rastros, ideal para superfícies que exigem brilho e pureza.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Ação Multiuso</span>
-                            <span class="spec-value">Sinergia de surfactantes que dissolvem gorduras leves e poeira instantaneamente.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Versão Álcool</span>
-                            <span class="spec-value">Evaporação ultra-rápida, ideal para desinfecção rápida e secagem imediata.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Versão Clareador</span>
-                            <span class="spec-value">Agentes oxidantes suaves para remoção de manchas superficiais e realce de brancos.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Não usar em seda, veludo ou superfícies porosas.</div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Limpa Vidros Spray.webp" class="product-img" alt="Limpa Vidros">
-                    </div>
-                    <div class="product-name">Limpa Vidros Spray</div>
-                    <p class="product-desc">Tecnologia de transparência absoluta. Desenvolvido para a remoção de gorduras e impressões digitais sem a formação de névoas, garantindo visibilidade cristalina em segundos.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Ação Química</span>
-                            <span class="spec-value">Solventes voláteis de alta pureza que evitam a redeposição de sujeira.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Resultado</span>
-                            <span class="spec-value">Acabamento invisível e brilho espelhado em vidros e espelhos.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Não aplicar em molduras de madeira sem verniz.</div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Kit Limpa Telas.webp" class="product-img" alt="Limpa Telas">
-                    </div>
-                    <div class="product-name">Kit Limpa Telas</div>
-                    <p class="product-desc">Engenharia de proteção para displays de alta tecnologia. Limpeza antiestática avançada que remove partículas microscópicas sem comprometer as camadas oleofóbicas da tela.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Segurança Técnica</span>
-                            <span class="spec-value">Livre de álcool e solventes corrosivos, preservando a vida útil do monitor.</span>
-                        </div>
-                        <div class="spec-item">
-                            <span class="spec-label">Efeito Antiestático</span>
-                            <span class="spec-value">Repelência prolongada contra a atração de poeira e partículas.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Aplique o líquido no pano, nunca diretamente na tela.</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SEÇÃO: AUTOMOTIVO -->
-        <section class="category-section" id="automotivo">
-            <div class="category-header">
-                <h2>🚗 Têxteis & Automotivo</h2>
-            </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Facilitador de Passar Roupas Tuff.webp" class="product-img" alt="Tuff">
-                    </div>
-                    <div class="product-name">Facilitador de Passar Tuff</div>
-                    <p class="product-desc">Otimização do tempo de ferro. Deslize superior com acabamento de lavanderia profissional.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Ação</span>
-                            <span class="spec-value">Agente suavizante e antiestático para tecidos.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Evite tecidos que mancham com facilidade.</div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Revitalizador de Pneus Pretita.webp" class="product-img" alt="Pretita">
-                    </div>
-                    <div class="product-name">Revitalizador de Pneus Pretita</div>
-                    <p class="product-desc">Efeito "pneu novo" com durabilidade superior, protegendo a borracha contra o ressecamento.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Base</span>
-                            <span class="spec-value">Emulsão de silicone de alta aderência.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Não aplicar na banda de rodagem para evitar derrapagens.</div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Tira Risco e Descalcificante Indy.webp" class="product-img" alt="Indy">
-                    </div>
-                    <div class="product-name">Tira Risco e Descalcificante Indy</div>
-                    <p class="product-desc">Estética automotiva de precisão. Remove calcário e riscos superficiais sem agredir a pintura.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Tecnologia</span>
-                            <span class="spec-value">Polímero abrasivo ultrafino.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Não utilizar em pinturas foscas ou plásticos sem proteção.</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SEÇÃO: DESINFETANTES -->
-        <section class="category-section" id="desinfetantes">
-            <div class="category-header">
-                <h2>🌸 Desinfetantes Diluíveis</h2>
-            </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-img-container">
-                        <img src="fotos/Linha Perfumada (140ml).webp" class="product-img" alt="Perfumada">
-                    </div>
-                    <div class="product-name">Linha Perfumada (140ml)</div>
-                    <p class="product-desc">Concentração extrema para máximo rendimento. Apenas gotas para perfumar ambientes amplos.</p>
-                    <div class="tech-specs">
-                        <div class="spec-item">
-                            <span class="spec-label">Fragrâncias</span>
-                            <span class="spec-value">Erva Doce, Eucalipto, Floral, Lavanda, Marine e Wave.</span>
-                        </div>
-                    </div>
-                    <div class="caution-box">⚠️ Não indicado para esterilização hospitalar rigorosa.</div>
-                </div>
-            </div>
-        </section>
-
+    <div class="container" id="product-container">
+        <!-- Produtos carregados dinamicamente aqui -->
     </div>
 
-    <!-- MODAL DE DETALHES DO PRODUTO -->
+    <!-- MODAL SYSTEM -->
     <div id="productModal" class="modal">
         <div class="modal-content">
-            <span class="close-modal" id="closeModal">&times;</span>
-            <img id="modalImg" src="" alt="Produto" class="modal-img">
+            <span id="closeModal" class="close-modal">&times;</span>
+            <img id="modalImg" class="modal-img" src="" alt="Produto">
             <h2 id="modalTitle" class="modal-title"></h2>
             <p id="modalDesc" class="modal-desc"></p>
             <div id="modalSpecs" class="modal-specs"></div>
@@ -1038,40 +613,88 @@
     </div>
 
     <footer>
-        <span class="footer-brand">Elite Guide | Azulim & Start</span>
+        <span class="footer-brand">Guia de Produtos</span>
         <p>&copy; 2026 - Desenvolvido por <strong>jhon</strong>. Todos os direitos reservados.</p>
     </footer>
 
     <script>
-        // Efeito de revelação ao rolar (Scroll Reveal)
-        const observerOptions = {
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.category-section').forEach(section => {
-            observer.observe(section);
-        });
-
-        // LOGICA DO MODAL DE PRODUTOS
+        // Variáveis globais para facilitar acesso
+        const container = document.getElementById('product-container');
         const modal = document.getElementById('productModal');
         const closeModal = document.getElementById('closeModal');
-
         const modalImg = document.getElementById('modalImg');
         const modalTitle = document.getElementById('modalTitle');
         const modalDesc = document.getElementById('modalDesc');
         const modalSpecs = document.getElementById('modalSpecs');
         const modalCaution = document.getElementById('modalCaution');
+        const searchInput = document.getElementById('productSearch');
 
-        document.querySelectorAll('.product-card').forEach(card => {
-            card.addEventListener('click', () => {
+        let allProducts = [];
+
+        // Renderiza a grade de produtos
+        function renderProducts(products) {
+            container.innerHTML = '';
+
+            // Agrupar por categoria
+            const categories = [...new Set(products.map(p => p.category))];
+
+            categories.forEach(cat => {
+                const section = document.createElement('section');
+                section.className = 'category-section';
+                section.id = cat.toLowerCase().replace(/\s+/g, '-');
+
+                section.innerHTML = `
+                    <div class="category-header">
+                        <h2>${cat}</h2>
+                    </div>
+                    <div class="product-grid">
+                        ${products.filter(p => p.category === cat).map(p => `
+                            <div class="product-card" data-name="${p.name}" data-desc="${p.desc}">
+                                <div class="product-img-container">
+                                    <img src="${p.img}" class="product-img" alt="${p.name}">
+                                </div>
+                                <div class="product-name">${p.name}</div>
+                                <p class="product-desc">${p.desc}</p>
+                                <div class="tech-specs">
+                                    ${Object.entries(p.specs).map(([label, value]) => `
+                                        <div class="spec-item">
+                                            <span class="spec-label">${label}</span>
+                                            <span class="spec-value">${value}</span>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                                ${p.caution ? `<div class="caution-box">⚠️ ${p.caution}</div>` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                container.appendChild(section);
+            });
+
+            // Reativar IntersectionObserver para as novas seções
+            initScrollReveal();
+        }
+
+        // Efeito de revelação ao rolar (Scroll Reveal)
+        function initScrollReveal() {
+            const observerOptions = { threshold: 0.1 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersectIntersecting || entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.category-section').forEach(section => {
+                observer.observe(section);
+            });
+        }
+
+        // LOGICA DO MODAL
+        document.addEventListener('click', (e) => {
+            if (e.target.closest('.product-card')) {
+                const card = e.target.closest('.product-card');
                 const imgElement = card.querySelector('.product-img');
                 const imgRect = imgElement.getBoundingClientRect();
 
@@ -1085,60 +708,56 @@
                 flyImg.style.height = imgRect.height + 'px';
                 document.body.appendChild(flyImg);
 
-                // Captura dados do cartão clicado
-                const img = imgElement.src;
-                const name = card.querySelector('.product-name').innerText;
-                const desc = card.querySelector('.product-desc').innerText;
-                const caution = card.querySelector('.caution-box') ? card.querySelector('.caution-box').innerText : '';
+                // Buscar dados do produto via data-name ou via JSON
+                const productName = card.querySelector('.product-name').innerText;
+                const product = allProducts.find(p => p.name === productName);
 
-                // Captura todas as especificações técnicas
-                let specsHtml = '';
-                card.querySelectorAll('.spec-item').forEach(item => {
-                    const label = item.querySelector('.spec-label').innerText;
-                    const value = item.querySelector('.spec-value').innerText;
-                    specsHtml += `
-                        <div class="modal-spec-item">
-                            <span class="modal-spec-label">${label}</span>
-                            <span class="modal-spec-value">${value}</span>
-                        </div>`;
-                });
+                if (product) {
+                    // Preenche o modal
+                    modalImg.style.opacity = '0';
+                    modalImg.src = product.img;
+                    modalTitle.innerText = product.name;
+                    modalDesc.innerText = product.desc;
 
-                // Preenche o modal (escondendo a imagem final inicialmente)
-                modalImg.style.opacity = '0';
-                modalImg.src = img;
-                modalTitle.innerText = name;
-                modalDesc.innerText = desc;
-                modalSpecs.innerHTML = specsHtml;
-                modalCaution.innerText = caution;
+                    let specsHtml = '';
+                    Object.entries(product.specs).forEach(([label, value]) => {
+                        specsHtml += `
+                            <div class="modal-spec-item">
+                                <span class="modal-spec-label">${label}</span>
+                                <span class="modal-spec-value">${value}</span>
+                            </div>`;
+                    });
+                    modalSpecs.innerHTML = specsHtml;
+                    modalCaution.innerText = product.caution ? `⚠️ ${product.caution}` : '';
+                    modalCaution.style.display = product.caution ? 'block' : 'none';
 
-                // Abre o modal
-                modal.classList.add('active');
-                document.body.style.overflow = 'hidden';
+                    // Abre o modal
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
 
-                // 2. Animar a imagem voadora para a posição do modal
-                setTimeout(() => {
-                    const targetRect = modalImg.getBoundingClientRect();
-                    flyImg.style.top = targetRect.top + 'px';
-                    flyImg.style.left = targetRect.left + 'px';
-                    flyImg.style.width = targetRect.width + 'px';
-                    flyImg.style.height = targetRect.height + 'px';
-                }, 10);
+                    // 2. Animar a imagem voadora para a posição do modal
+                    setTimeout(() => {
+                        const targetRect = modalImg.getBoundingClientRect();
+                        flyImg.style.top = targetRect.top + 'px';
+                        flyImg.style.left = targetRect.left + 'px';
+                        flyImg.style.width = targetRect.width + 'px';
+                        flyImg.style.height = targetRect.height + 'px';
+                    }, 10);
 
-                // 3. Finalizar transição: remove voadora e mostra a real
-                setTimeout(() => {
-                    modalImg.style.opacity = '1';
-                    flyImg.remove();
-                }, 500);
-            });
+                    // 3. Finalizar transição
+                    setTimeout(() => {
+                        modalImg.style.opacity = '1';
+                        flyImg.remove();
+                    }, 500);
+                }
+            }
         });
 
-        // Fecha o modal ao clicar no X
         closeModal.addEventListener('click', () => {
             modal.classList.remove('active');
             document.body.style.overflow = 'auto';
         });
 
-        // Fecha o modal ao clicar fora do conteúdo
         window.addEventListener('click', (e) => {
             if (e.target === modal) {
                 modal.classList.remove('active');
@@ -1147,7 +766,6 @@
         });
 
         // LOGICA DE PESQUISA
-        const searchInput = document.getElementById('productSearch');
         searchInput.addEventListener('input', () => {
             const term = searchInput.value.toLowerCase();
             const cards = document.querySelectorAll('.product-card');
@@ -1163,6 +781,20 @@
                 }
             });
         });
+
+        // Carregamento Inicial
+        async function init() {
+            try {
+                const response = await fetch('products_data.json');
+                allProducts = await response.json();
+                renderProducts(allProducts);
+            } catch (error) {
+                console.error('Erro ao carregar produtos:', error);
+                container.innerHTML = '<p style="text-align:center; color:var(--danger);">Erro ao carregar o catálogo de produtos.</p>';
+            }
+        }
+
+        init();
     </script>
 </body>
 </html>
