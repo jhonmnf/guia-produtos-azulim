@@ -2,411 +2,445 @@
   {
     "category": "Cozinha",
     "name": "Lava Louças Neutro 500ml",
-    "desc": "Detergente com ação desengordurante indicado para limpeza manual em utensílios domésticos.",
+    "desc": "Sinergia de agentes surfactantes de alta performance projetados para a emulsificação instantânea de gorduras, garantindo a pureza absoluta de utensílios domésticos.",
     "specs": {
-      "Código": "03.0037",
-      "EAN 13": "7898902829064",
-      "Caixa": "24 Unidades"
+      "Mecanismo": "Tensão superficial reduzida para penetração profunda em resíduos lipídicos",
+      "Resultado": "Superfícies isentas de resíduos e brilho natural restaurado",
+      "Indicação": "Limpeza manual de louças e utensílios de cozinha"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2022/12/lava-loucas-neutro-500ml-1024x1024.jpg",
+    "img": "fotos/lava-loucas-neutro-500ml.jpg",
     "caution": ""
   },
   {
     "category": "Cozinha",
     "name": "Lava Louças Neutro 2L",
-    "desc": "Detergente com ação desengordurante indicado para limpeza manual em utensílios domésticos.",
+    "desc": "Sinergia de agentes surfactantes de alta performance projetados para a emulsificação instantânea de gorduras, garantindo a pureza absoluta de utensílios domésticos.",
     "specs": {
-      "Código": "03.0035",
-      "EAN 13": "7898902829071",
-      "Caixa": "6 Unidades"
+      "Mecanismo": "Tensão superficial reduzida para penetração profunda em resíduos lipídicos",
+      "Resultado": "Superfícies isentas de resíduos e brilho natural restaurado",
+      "Indicação": "Limpeza manual de louças e utensílios de cozinha"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/lava-loucas-neutro.jpg",
+    "img": "fotos/lava-loucas-neutro-2-litros-1024x1024.jpg",
     "caution": ""
   },
   {
     "category": "Cozinha",
     "name": "Lava Louças Neutro 5L",
-    "desc": "Detergente com ação desengordurante indicado para limpeza manual em utensílios domésticos.",
+    "desc": "Sinergia de agentes surfactantes de alta performance projetados para a emulsificação instantânea de gorduras, garantindo a pureza absoluta de utensílios domésticos.",
     "specs": {
-      "Código": "03.0123",
-      "EAN 13": "7898902829088"
+      "Mecanismo": "Tensão superficial reduzida para penetração profunda em resíduos lipídicos",
+      "Resultado": "Superfícies isentas de resíduos e brilho natural restaurado",
+      "Indicação": "Limpeza manual de louças e utensílios de cozinha"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/lava-loucas-neutro.jpg",
+    "img": "fotos/lava-loucas-neutro-5-litros-1024x1024.jpg",
     "caution": ""
   },
   {
     "category": "Cozinha",
     "name": "Lava Louças Clear 500ml",
-    "desc": "Detergente com ação desengordurante indicado para limpeza manual em utensílios domésticos.",
+    "desc": "Fórmula de alta transparência e desengorduramento ultra-rápido, desenvolvida para eliminar resíduos gordurosos sem deixar rastros ou opacidade.",
     "specs": {
-      "Código": "03.0034",
-      "EAN 13": "7898902829255",
-      "Caixa": "24 Unidades"
+      "Mecanismo": "Agentes quelantes que rompem a estrutura de gorduras complexas",
+      "Resultado": "Transparência cristalina e higienização profunda",
+      "Indicação": "Louças de vidro, cristais e cerâmicas"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2022/12/lava-loucas-clear-500ml-1024x1024.jpg",
+    "img": "fotos/lava-loucas-clear-500ml.jpg",
     "caution": ""
   },
   {
     "category": "Cozinha",
     "name": "Lava Louças Clear 5L",
-    "desc": "Detergente com ação desengordurante indicado para limpeza manual em utensílios domésticos.",
+    "desc": "Fórmula de alta transparência e desengorduramento ultra-rápido, desenvolvida para eliminar resíduos gordurosos sem deixar rastros ou opacidade.",
     "specs": {
-      "Código": "03.0122",
-      "EAN 13": "7898902829279"
+      "Mecanismo": "Agentes quelantes que rompem a estrutura de gorduras complexas",
+      "Resultado": "Transparência cristalina e higienização profunda",
+      "Indicação": "Louças de vidro, cristais e cerâmicas"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/lava-loucas-clear.jpg",
+    "img": "fotos/lava-louca-clean-5-litros-nathan.webp",
     "caution": ""
   },
   {
     "category": "Cozinha",
     "name": "Limpa Alumínio Vermelho",
-    "desc": "Indicado para recuperar o brilho de utensílios de alumínio, como: panelas, talheres, torneiras, tampas e assadeiras.",
+    "desc": "Tecnologia de restauração metálica que remove a oxidação e devolve o brilho original do alumínio sem a necessidade de abrasão excessiva.",
     "specs": {
-      "Código": "03.0047",
-      "Ação": "Remoção de manchas e realce do brilho natural"
+      "Mecanismo": "Reação química de desoxidação superficial controlada",
+      "Resultado": "Recuperação do aspecto de novo e realce do brilho metálico",
+      "Indicação": "Panelas, talheres e torneiras de alumínio"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/limpa-aluminio-vermelho.jpg",
+    "img": "fotos/Limpa-Aluminio-500-ml-01.jpg",
     "caution": "Não utilizar em superfícies pintadas."
   },
   {
     "category": "Cozinha",
     "name": "Limpa Alumínio Azul",
-    "desc": "Indicado para recuperar o brilho de utensílios em alumínio, agindo rapidamente e realçando o brilho natural.",
+    "desc": "Tecnologia de restauração metálica que remove a oxidação e devolve o brilho original do alumínio sem a necessidade de abrasão excessiva.",
     "specs": {
-      "Código": "03.0046",
-      "EAN 13": "7898902829217"
+      "Mecanismo": "Reação química de desoxidação superficial controlada",
+      "Resultado": "Recuperação do aspecto de novo e realce do brilho metálico",
+      "Indicação": "Panelas, talheres e torneiras de alumínio"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/limpa-aluminio-azul.jpg",
+    "img": "fotos/Limpa-Aluminio-500-ml-02.jpg",
     "caution": "Não utilizar em superfícies pintadas."
   },
   {
     "category": "Cozinha",
     "name": "Limpa Inox",
-    "desc": "Dá brilho em seu inox retirando totalmente a sujeira tais como: manchas de água e oxidações.",
+    "desc": "Engenharia de polimento líquido que remove manchas de água e oxidações, criando uma camada protetora que realça a estética do aço inoxidável.",
     "specs": {
-      "Código": "03.0048",
-      "EAN 13": "7898902829750"
+      "Mecanismo": "Solventes voláteis de alta pureza para remoção de depósitos minerais",
+      "Resultado": "Superfície espelhada e livre de impressões digitais",
+      "Indicação": "Eletrodomésticos, pias e acessórios em inox"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/limpa-inox.jpg",
+    "img": "fotos/Limpa-Inox-500-ml.jpg",
     "caution": "Evite contato prolongado com plásticos delicados."
   },
   {
     "category": "Cozinha",
     "name": "Sabão em Pasta",
-    "desc": "Produto desenvolvido para lavar e dar brilho em panelas, pias, torneiras e demais utensílios de alumínio.",
+    "desc": "Composto de alta densidade com poder abrasivo balanceado, projetado para a remoção de sujeiras incrustadas em metais e superfícies rústicas.",
     "specs": {
-      "Código": "03.0093",
-      "EAN 13": "7898902829019"
+      "Mecanismo": "Sinergia de detergentes concentrados com partículas de polimento suave",
+      "Resultado": "Eliminação de gorduras carbonizadas e restauração de brilho",
+      "Indicação": "Limpeza profunda de panelas e pias de alumínio"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/sabao-pasta.jpg",
+    "img": "fotos/sabao-em-pasta-500ml.jpg",
     "caution": "Recomenda-se o uso de luvas em peles sensíveis."
   },
   {
     "category": "Desinfetantes",
     "name": "Desinfetante Ervas",
-    "desc": "Indicado na limpeza, desinfecção e desodorização de ambientes com excelente poder antibacteriano.",
+    "desc": "Engenharia de desinfecção avançada que combina amplo espectro bactericida com fragrâncias terapêuticas, promovendo a higienização profunda e a pureza do ar.",
     "specs": {
-      "Fragrância": "Ervas",
-      "Ação": "Germicida e Bactericida"
+      "Mecanismo": "Agentes germicidas de alta reatividade para neutralização de patógenos",
+      "Resultado": "Ambientes estéreis com fragrância de longa permanência",
+      "Indicação": "Pisos, azulejos e superfícies laváveis em geral"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2022/12/desinfetante-ervas-2-litros-1024x1024.jpg",
+    "img": "fotos/desinfetante-ervas-2-litros.jpg",
     "caution": "Não ingerir. Manter longe de crianças."
   },
   {
     "category": "Desinfetantes",
     "name": "Desinfetante Algas",
-    "desc": "Indicado na limpeza, desinfecção e desodorização de ambientes com excelente poder antibacteriano.",
+    "desc": "Engenharia de desinfecção avançada que combina amplo espectro bactericida com fragrâncias terapêuticas, promovendo a higienização profunda e a pureza do ar.",
     "specs": {
-      "Fragrância": "Algas",
-      "Ação": "Germicida e Bactericida"
+      "Mecanismo": "Agentes germicidas de alta reatividade para neutralização de patógenos",
+      "Resultado": "Ambientes estéreis com fragrância de longa permanência",
+      "Indicação": "Pisos, azulejos e superfícies laváveis em geral"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2022/12/desinfetante-algas-2-litros-1024x1024.jpg",
+    "img": "fotos/desinfetante-algas-2-litros.jpg",
     "caution": "Não ingerir. Manter longe de crianças."
   },
   {
     "category": "Desinfetantes",
     "name": "Desinfetante Pinho Fresh",
-    "desc": "Indicado na limpeza, desinfecção e desodorização de ambientes com excelente poder antibacteriano.",
+    "desc": "Engenharia de desinfecção avançada que combina amplo espectro bactericida com fragrâncias terapêuticas, promovendo a higienização profunda e a pureza do ar.",
     "specs": {
-      "Fragrância": "Pinho Fresh",
-      "Ação": "Germicida e Bactericida"
+      "Mecanismo": "Agentes germicidas de alta reatividade para neutralização de patógenos",
+      "Resultado": "Ambientes estéreis com fragrância de longa permanência",
+      "Indicação": "Pisos, azulejos e superfícies laváveis em geral"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2022/12/desinfetante-pinho-fresh-5-litros-1024x1024.jpg",
+    "img": "fotos/desinfetante-pinho-fresh-2-litros.jpg",
     "caution": "Não ingerir. Manter longe de crianças."
   },
   {
     "category": "Desinfetantes",
     "name": "Desinfetante Mil Flores",
-    "desc": "Indicado na limpeza, desinfecção e desodorização de ambientes com excelente poder antibacteriano.",
+    "desc": "Engenharia de desinfecção avançada que combina amplo espectro bactericida com fragrâncias terapêuticas, promovendo a higienização profunda e a pureza do ar.",
     "specs": {
-      "Fragrância": "Mil Flores",
-      "Ação": "Germicida e Bactericida"
+      "Mecanismo": "Agentes germicidas de alta reatividade para neutralização de patógenos",
+      "Resultado": "Ambientes estéreis com fragrância de longa permanência",
+      "Indicação": "Pisos, azulejos e superfícies laváveis em geral"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2022/12/desinfetante-mil-flores-5-litros-1024x1024.jpg",
+    "img": "fotos/desinfetante-mil-flores-5-litros.jpg",
     "caution": "Não ingerir. Manter longe de crianças."
   },
   {
     "category": "Desinfetantes",
     "name": "Desinfetante Lavanda",
-    "desc": "Indicado na limpeza, desinfecção e desodorização de ambientes com excelente poder antibacteriano.",
+    "desc": "Engenharia de desinfecção avançada que combina amplo espectro bactericida com fragrâncias terapêuticas, promovendo a higienização profunda e a pureza do ar.",
     "specs": {
-      "Fragrância": "Lavanda",
-      "Ação": "Germicida e Bactericida"
+      "Mecanismo": "Agentes germicidas de alta reatividade para neutralização de patógenos",
+      "Resultado": "Ambientes estéreis com fragrância de longa permanência",
+      "Indicação": "Pisos, azulejos e superfícies laváveis em geral"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2022/12/desinfetante-lavanda-2-litros-1024x1024.jpg",
+    "img": "fotos/desinfetante-lavanda-2-litros.jpg",
     "caution": "Não ingerir. Manter longe de crianças."
   },
   {
     "category": "Desinfetantes",
     "name": "Desinfetante Floral",
-    "desc": "Indicado na limpeza, desinfecção e desodorização de ambientes com excelente poder antibacteriano.",
+    "desc": "Engenharia de desinfecção avançada que combina amplo espectro bactericida com fragrâncias terapêuticas, promovendo a higienização profunda e a pureza do ar.",
     "specs": {
-      "Fragrância": "Floral",
-      "Ação": "Germicida e Bactericida"
+      "Mecanismo": "Agentes germicidas de alta reatividade para neutralização de patógenos",
+      "Resultado": "Ambientes estéreis com fragrância de longa permanência",
+      "Indicação": "Pisos, azulejos e superfícies laváveis em geral"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2022/12/desinfetante-floral-2-litros-1024x1024.jpg",
+    "img": "fotos/desinfetante-floral-2-litros.jpg",
     "caution": "Não ingerir. Manter longe de crianças."
   },
   {
     "category": "Desinfetantes",
     "name": "Desinfetante Bambu",
-    "desc": "Indicado na limpeza, desinfecção e desodorização de ambientes com excelente poder antibacteriano.",
+    "desc": "Engenharia de desinfecção avançada que combina amplo espectro bactericida com fragrâncias terapêuticas, promovendo a higienização profunda e a pureza do ar.",
     "specs": {
-      "Fragrância": "Bambu",
-      "Ação": "Germicida e Bactericida"
+      "Mecanismo": "Agentes germicidas de alta reatividade para neutralização de patógenos",
+      "Resultado": "Ambientes estéreis com fragrância de longa permanência",
+      "Indicação": "Pisos, azulejos e superfícies laváveis em geral"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2022/12/desinfetante-bambu-2-litros-1024x1024.jpg",
+    "img": "fotos/desinfetante-bambu-2-litros.jpg",
     "caution": "Não ingerir. Manter longe de crianças."
   },
   {
     "category": "Desinfetantes",
     "name": "Desinfetante Talco",
-    "desc": "Indicado na limpeza, desinfecção e desodorização de ambientes com excelente poder antibacteriano.",
+    "desc": "Engenharia de desinfecção avançada que combina amplo espectro bactericida com fragrâncias terapêuticas, promovendo a higienização profunda e a pureza do ar.",
     "specs": {
-      "Fragrância": "Talco",
-      "Ação": "Germicida e Bactericida"
+      "Mecanismo": "Agentes germicidas de alta reatividade para neutralização de patógenos",
+      "Resultado": "Ambientes estéreis com fragrância de longa permanência",
+      "Indicação": "Pisos, azulejos e superfícies laváveis em geral"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/07/desinfetante-talco-5-litros.jpg",
+    "img": "fotos/desinfetante-talco-5-litros.jpg",
     "caution": "Não ingerir. Manter longe de crianças."
   },
   {
     "category": "Desinfetantes",
     "name": "Desinfetante Cidreira",
-    "desc": "Indicado na limpeza, desinfecção e desodorização de ambientes com excelente poder antibacteriano.",
+    "desc": "Engenharia de desinfecção avançada que combina amplo espectro bactericida com fragrâncias terapêuticas, promovendo a higienização profunda e a pureza do ar.",
     "specs": {
-      "Fragrância": "Cidreira",
-      "Ação": "Germicida e Bactericida"
+      "Mecanismo": "Agentes germicidas de alta reatividade para neutralização de patógenos",
+      "Resultado": "Ambientes estéreis com fragrância de longa permanência",
+      "Indicação": "Pisos, azulejos e superfícies laváveis em geral"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/07/desinfetante-cidreira-2-litros.jpg",
+    "img": "fotos/desinfetante-cidreira-2-litros.jpg",
     "caution": "Não ingerir. Manter longe de crianças."
   },
   {
     "category": "Lavanderia",
     "name": "Lava Roupas Concentrado",
-    "desc": "Limpa profundamente as roupas removendo as mais diversas manchas sem prejudicar a qualidade dos tecidos.",
+    "desc": "Fórmula de alta concentração com agentes tensoativos profundos, projetada para a extração de manchas complexas preservando a integridade das fibras têxteis.",
     "specs": {
-      "Diferencial": "Branco mais intenso sem agredir cores",
-      "Aplicação": "Roupas em geral"
+      "Mecanismo": "Penetração molecular para remoção de sujidades orgânicas e minerais",
+      "Resultado": "Branco intenso e cores preservadas sem resíduos de sabão",
+      "Indicação": "Tecidos de alta densidade e roupas em geral"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/lava-roupas-concentrado.jpg",
+    "img": "fotos/Nathan_Lava-Roupas_Concentrado_2-litros.jpg",
     "caution": "Não misturar com alvejantes clorados."
   },
   {
     "category": "Lavanderia",
     "name": "Lava Roupas Comum",
-    "desc": "Limpa profundamente as roupas removendo as mais diversas sujidades sem prejudicar a qualidade dos tecidos.",
+    "desc": "Solução de limpeza têxtil balanceada para o uso cotidiano, oferecendo eficiência na remoção de sujidades leves a moderadas com máxima renderização.",
     "specs": {
-      "Diferencial": "Prático e eficiente",
-      "Volume": "5 Litros"
+      "Mecanismo": "Ação surfactante equilibrada para limpeza superficial eficiente",
+      "Resultado": "Higienização completa e suavidade ao toque",
+      "Indicação": "Roupas do dia a dia e tecidos leves"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/lava-roupas-comum.jpg",
+    "img": "fotos/lava-roupas-5-litros.jpg",
     "caution": "Manter fora do alcance de crianças."
   },
   {
     "category": "Lavanderia",
     "name": "Lava Roupas Coco",
-    "desc": "Sabão líquido com excelente ação de limpeza, deixando nas roupas um cheirinho leve e agradável de coco.",
+    "desc": "Tecnologia de limpeza enzimática combinada com extratos aromáticos de coco, proporcionando higienização profunda e um aroma suave e prolongado.",
     "specs": {
-      "Diferencial": "Aroma de coco",
-      "Volume": "5 Litros"
+      "Mecanismo": "Ação enzimática específica para a quebra de proteínas e gorduras",
+      "Resultado": "Tecidos limpos, macios e com fragrância tropical característica",
+      "Indicação": "Roupas delicadas e uso geral"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/lava-roupas-coco.jpg",
+    "img": "fotos/Nathan_Lava-Roupas_Coco_5-litros.webp",
     "caution": "Manter fora do alcance de crianças."
   },
   {
     "category": "Lavanderia",
     "name": "Alvejante sem Cloro",
-    "desc": "Proporciona ao tecido um alvejamento sem danificar as fibras e sem agredir as roupas, até mesmo as coloridas.",
+    "desc": "Tecnologia de oxigenação ativa que remove manchas orgânicas e realça a brancura dos tecidos sem agredir as fibras ou alterar as cores originais.",
     "specs": {
-      "Princípio Ativo": "Peróxido de Hidrogênio",
-      "Ação": "Alvejamento seguro"
+      "Mecanismo": "Liberação controlada de oxigênio ativo para a quebra de pigmentos de manchas",
+      "Resultado": "Alvejamento seguro e preservação da vida útil do tecido",
+      "Indicação": "Roupas brancas e coloridas"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/alvejante-sem-cloro.jpg",
+    "img": "fotos/Alvejante-sem-cloro_2-litros.jpg",
     "caution": "Não aplicar puramente sobre tecidos delicados."
   },
   {
     "category": "Lavanderia",
     "name": "Amaciante Soft",
-    "desc": "Proporciona maciez e perfume em todos os tipos de tecidos, auxiliando no processo de passar.",
+    "desc": "Agentes condicionadores de fibras de alta performance que reduzem a eletricidade estática, proporcionando toque aveludado e facilidade no passar.",
     "specs": {
-      "Benefício": "Toque suave e longa duração",
-      "Uso": "Todos os tipos de tecidos"
+      "Mecanismo": "Revestimento molecular de fibras para suavização e proteção",
+      "Resultado": "Tecidos macios, perfumados e com deslize superior ao ferro",
+      "Indicação": "Todos os tipos de tecidos"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/amaciante-soft.jpg",
+    "img": "fotos/Nathan_Amaciante-Soft-2-litros.jpg",
     "caution": "Não aplicar diretamente sobre o tecido."
   },
   {
     "category": "Limpeza Geral",
     "name": "Limpador Multiuso",
-    "desc": "Detergente indicado para limpar e desengordurar superfícies laváveis em geral como pisos, paredes e azulejos.",
+    "desc": "Versatilidade química em um único produto, formulado para a dissolução rápida de poeira e gorduras leves em diversas superfícies laváveis.",
     "specs": {
-      "Diferencial": "Contém solvente natural",
-      "Indicação": "Pisos vitrificados e porcelanato"
+      "Mecanismo": "Sinergia de solventes naturais e surfactantes de rápida evaporação",
+      "Resultado": "Limpeza imediata sem a necessidade de enxágue prolongado",
+      "Indicação": "Pisos, paredes, azulejos e superfícies plásticas"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/multiuso.jpg",
+    "img": "fotos/multiuso-2-litros.jpg",
     "caution": "Testar em pequena área antes do uso total."
   },
   {
     "category": "Limpeza Geral",
     "name": "Cloro Gel",
-    "desc": "Detergente alcalino clorado, muito eficaz na limpeza do dia a dia do lar, higienizando pias, pisos e vasos.",
+    "desc": "Poder desinfetante de alta viscosidade, projetado para máxima aderência em superfícies verticais, garantindo ação prolongada contra germes e fungos.",
     "specs": {
-      "Ação": "Alcalina clorada",
-      "Uso": "Higienização profunda"
+      "Mecanismo": "Formulação alcalina clorada com alta densidade para maior tempo de contato",
+      "Resultado": "Higienização profunda e branqueamento de rejuntes e pias",
+      "Indicação": "Banheiros, cozinhas e áreas externas"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/cloro-gel.jpg",
+    "img": "fotos/cloro-gel-2-litros.jpg",
     "caution": "Não misturar com ácidos."
   },
   {
     "category": "Limpeza Geral",
     "name": "Limpador Extra Pesado Maridão",
-    "desc": "Formulado com combinação de detergentes que aumentam o poder de limpeza e remoção de gorduras.",
+    "desc": "O ápice da remoção de gorduras domésticas. Formulado com agentes desengordurantes de alta potência para enfrentar as sujeiras mais resistentes.",
     "specs": {
-      "Indicação": "Azulejos, fogões e estofados",
-      "Ação": "Remoção de gorduras difíceis"
+      "Mecanismo": "Ação química disruptiva sobre cadeias de gorduras saturadas",
+      "Resultado": "Remoção drástica de gorduras carbonizadas com esforço reduzido",
+      "Indicação": "Fogões, coifas, azulejos e estofados"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/maridao.jpg",
+    "img": "fotos/extra-maridao-2-litros.jpg",
     "caution": "Usar luvas de proteção."
   },
   {
     "category": "Limpeza Geral",
     "name": "Limpador Oxigênio Ativo",
-    "desc": "Limpador multiuso concentrado à base de Peróxido de Hidrogênio. Remove manchas orgânicas como bolor e mofo.",
+    "desc": "Tecnologia de oxidação avançada baseada em Peróxido de Hidrogênio, especializada na eliminação de bolores, mofos e manchas orgânicas persistentes.",
     "specs": {
-      "Base": "Peróxido de Hidrogênio",
-      "Ação": "Alvejante e desinfectante"
+      "Mecanismo": "Reação oxidante vigorosa que degrada a estrutura de fungos e detritos",
+      "Resultado": "Superfícies purificadas, alvejadas e livre de micro-organismos",
+      "Indicação": "Banheiros, paredes e áreas úmidas"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/oxigenio-ativo.jpg",
+    "img": "fotos/oxigenio_ativo_2_litros.webp",
     "caution": "Evite contato com os olhos."
   },
   {
     "category": "Limpeza Geral",
     "name": "Desengordurante Flotador",
-    "desc": "Indicado para superfícies laváveis como carpetes, tapetes, laminados, plásticos e interior de automóveis.",
+    "desc": "Engenharia de limpeza multisuperfície com alta performance, projetada para a remoção de óleos e gorduras sem agredir materiais sintéticos ou couro.",
     "specs": {
-      "Ação": "Alta performance",
-      "Indicação": "Multisuperfícies"
+      "Mecanismo": "Agentes emulsificantes de alta eficiência para suspensão de gorduras",
+      "Resultado": "Limpeza profunda e revitalização de superfícies plásticas e têxteis",
+      "Indicação": "Interiores de carros, carpetes, laminados e plásticos"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/flotador.jpg",
+    "img": "fotos/desengordurante-flotador-2-litros.webp",
     "caution": "Não utilizar em tecidos porosos."
   },
   {
     "category": "Limpeza Geral",
     "name": "Limpeza Pesada",
-    "desc": "Sabão amoniacal indicado para limpeza manual em fogões, pisos e qualquer superfície lavável engordurada.",
+    "desc": "Sabão amoniacal de alta performance, desenvolvido para a dissolução de camadas densas de gordura em ambientes de alta demanda de limpeza.",
     "specs": {
-      "Base": "Amoniacal",
-      "Ação": "Remoção de gordura pesada"
+      "Mecanismo": "Ação alcalina amoniacal para a saponificação de gorduras pesadas",
+      "Resultado": "Superfícies completamente desengorduradas e higienizadas",
+      "Indicação": "Fogões, pisos engordurados e superfícies laváveis"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/limpeza-pesada.jpg",
+    "img": "fotos/Limpeza-Peasada-2-litros.jpg",
     "caution": "Usar em local ventilado."
   },
   {
     "category": "Limpeza Geral",
     "name": "Pinho Gel Cremoso",
-    "desc": "Detergente limpador biodegradável com grande poder de odorização. Ideal for banheiros e saunas.",
+    "desc": "A eficiência do desinfetante com a densidade do gel, proporcionando maior rendimento e uma experiência sensorial de limpeza prolongada.",
     "specs": {
-      "Tipo": "Gel Cremoso",
-      "Ação": "Desodorizante"
+      "Mecanismo": "Base de gel de alta viscosidade para máxima aderência e menor desperdício",
+      "Resultado": "Desinfecção profunda com aroma de pinho de longa duração",
+      "Indicação": "Banheiros, saunas e áreas externas"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/pinho-gel.jpg",
+    "img": "fotos/pinho-gel-2-litros.webp",
     "caution": "Não ingerir."
   },
   {
     "category": "Limpeza Geral",
     "name": "Limpa Pedras",
-    "desc": "Desenvolvido para remoção de sujeiras brutas e incrustações em cimentados, pedras e pisos rústicos.",
+    "desc": "Formulação química agressiva projetada para a remoção de incrustações minerais e sujeiras brutas em pedras rústicas e cimentados.",
     "specs": {
-      "Indicação": "Ardósia, Cimentados, Pedra Mineira",
-      "Ação": "Remoção de incrustações"
+      "Mecanismo": "Ação ácida controlada para a dissolução de depósitos calcários",
+      "Resultado": "Restauração da cor original e remoção de detritos profundos",
+      "Indicação": "Ardósia, cimentados e pedras mineiras"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/limpa-pedras.jpg",
+    "img": "fotos/limpa-pedras-2-litros.jpg",
     "caution": "Cuidado com respingos em áreas pintadas."
   },
   {
     "category": "Limpeza Geral",
     "name": "Limpa Cerâmicas",
-    "desc": "Produto concentrado para limpeza de azulejos, cerâmicas e rejuntes. Pode ser diluído em até 1/15.",
+    "desc": "Solução concentrada de alta precisão para a remoção de névoas de gordura e resíduos de obra em azulejos e rejuntes.",
     "specs": {
-      "Diluição": "1:15",
-      "Indicação": "Azulejos e Rejuntes"
+      "Mecanismo": "Agentes detergentes de alta solubilidade com alta capacidade de diluição",
+      "Resultado": "Superfícies luminosas e rejuntes revitalizados",
+      "Indicação": "Cozinhas, banheiros e áreas com azulejos"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/limpa-ceramica.jpg",
+    "img": "fotos/limpa-ceramica-2-litros.webp",
     "caution": "Não utilizar em pedras naturais porosas."
   },
   {
     "category": "Limpeza Geral",
     "name": "Limpador de Pavimento e Cimentados",
-    "desc": "Para superfícies de pavimentos não esmaltados, áreas cimentadas e pedras rústicas.",
+    "desc": "Especialista em superfícies não esmaltadas, removendo a sujeira acumulada em porosidades de pedras rústicas e pavimentos.",
     "specs": {
-      "Uso": "Pavimentos rústicos",
-      "Tipo": "Limpeza Profunda"
+      "Mecanismo": "Detergência profunda para remoção de sujidades em materiais porosos",
+      "Resultado": "Limpeza rigorosa e remoção de encrostamentos superficiais",
+      "Indicação": "Pavimentos rústicos e áreas cimentadas"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/limpador-pavimentos.jpg",
+    "img": "fotos/limpador-pavimentos-2-litros.webp",
     "caution": "Lavar a superfície após a aplicação."
   },
   {
     "category": "Limpeza Geral",
     "name": "Limpa Obras",
-    "desc": "Desenvolvido para limpeza pós-obra na remoção de restos de cimento e tintas.",
+    "desc": "Tecnologia de limpeza pós-obra especializada na remoção de resíduos de cimento, gesso e tintas, preservando a integridade do piso.",
     "specs": {
-      "Ação": "Remoção de cimento e tinta",
-      "Uso": "Pós-obra"
+      "Mecanismo": "Ação química específica para a quebra de ligações cimentícias",
+      "Resultado": "Remoção total de resíduos de construção e acabamento impecável",
+      "Indicação": "Pisos e paredes após obras de construção"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/limpa-obras.jpg",
+    "img": "fotos/limpa-obras-2-litros.jpg",
     "caution": "Sempre utilizar EPIs."
   },
   {
     "category": "Limpeza Geral",
     "name": "Água Sanitária",
-    "desc": "Desinfetante de uso geral com ação germicida e bactericida. Indicada para alvejamento de roupas.",
+    "desc": "Agente de desinfecção universal com amplo espectro germicida, ideal para a higienização de ambientes e alvejamento de tecidos.",
     "specs": {
-      "Ação": "Germicida",
-      "Uso": "Geral e Roupas"
+      "Mecanismo": "Oxidação química via hipoclorito de sódio para eliminação de patógenos",
+      "Resultado": "Ambientes esterilizados e brancura absoluta em roupas",
+      "Indicação": "Uso geral doméstico e lavanderia"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/agua-sanitaria.jpg",
+    "img": "fotos/Agua-Sanitaria-1-litro-1024x1024.webp",
     "caution": "Não misturar com amônia."
   },
   {
     "category": "Limpeza Geral",
     "name": "Naclor",
-    "desc": "Desinfetante à base de hipoclorito de sódio para higienização de superfícies que exijam cuidados restritos.",
+    "desc": "Soluções de hipoclorito de sódio de alta pureza, destinadas à desinfecção rigorosa de superfícies e tratamento industrial de águas.",
     "specs": {
-      "Base": "Hipoclorito de Sódio",
-      "Ação": "Alvejamento e Desinfecção"
+      "Mecanismo": "Concentração controlada de cloro ativo para oxidação de contaminantes",
+      "Resultado": "Higienização de nível industrial e controle bacteriológico",
+      "Indicação": "Piscinas, indústrias e superfícies que exijam cuidado restrito"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/naclor.jpg",
+    "img": "fotos/agua-sanitaria-2-litros.jpg",
     "caution": "Lavar bem após o uso."
   },
   {
     "category": "Limpeza Geral",
     "name": "Cloro 8 a 10%",
-    "desc": "Solução de hipoclorito de sódio destinada à desinfecção de piscinas e uso industrial.",
+    "desc": "Soluções de hipoclorito de sódio de alta pureza, destinadas à desinfecção rigorosa de superfícies e tratamento industrial de águas.",
     "specs": {
-      "Concentração": "8% a 10%",
-      "Uso": "Piscinas e Indústria"
+      "Mecanismo": "Concentração controlada de cloro ativo para oxidação de contaminantes",
+      "Resultado": "Higienização de nível industrial e controle bacteriológico",
+      "Indicação": "Piscinas, indústrias e superfícies que exijam cuidado restrito"
     },
-    "img": "https://nathanquimica.com.br/wp-content/uploads/2023/01/cloro-8-10.jpg",
+    "img": "fotos/Agua-Sanitaria-5-litros.jpg",
     "caution": "Produto corrosivo. Manusear com extrema cautela."
   },
   {
@@ -414,9 +448,9 @@
     "name": "Sabonete Líquido Only Start",
     "desc": "Sinergia entre higiene profunda e terapia sensorial. Desenvolvido com agentes surfactantes suaves que removem impurezas sem agredir a barreira cutânea.",
     "specs": {
-      "Variedades": "Camomila com Mel, Morango, Paris, Provence e Neutralizador.",
-      "Diferencial Técnico": "pH balanceado e agentes hidratantes que previnem a perda de água transepidérmica.",
-      "Aplicação": "Uso diário corporal. Massagear sobre a pele úmida e enxaguar."
+      "Mecanismo": "pH balanceado e agentes hidratantes que previnem a perda de água transepidérmica",
+      "Resultado": "Limpeza profunda com preservação da hidratação natural",
+      "Indicação": "Uso diário corporal"
     },
     "img": "fotos/Sabonete Líquido Only Start.webp",
     "caution": "Não aplicar em mucosas ou peles com ferimentos abertos."
@@ -426,9 +460,9 @@
     "name": "Sabonete em Barra Only Start Viena",
     "desc": "A excelência da saboaria europeia adaptada ao clima tropical. Limpeza densa com toque aveludado para regeneração da pele.",
     "specs": {
-      "Peso": "80g de alta densidade (maior durabilidade e menos desperdício).",
-      "Ação Primária": "Remoção profunda de detritos sem ressecamento cutâneo.",
-      "Uso Indicado": "Ideal para peles sensíveis que buscam limpeza vigorosa porém suave."
+      "Mecanismo": "Alta densidade de lipídios suaves para remoção de detritos sem ressecamento",
+      "Resultado": "Pele regenerada, macia e com toque aveludado",
+      "Indicação": "Ideal para peles sensíveis"
     },
     "img": "fotos/Sabonete em Barra Only Start Viena.webp",
     "caution": "Evitar contato prolongado com mucosas oculares."
@@ -438,9 +472,9 @@
     "name": "Desentupidor Start Pro",
     "desc": "Engenharia química de alta potência projetada para a dissolução instantânea de obstruções orgânicas complexas.",
     "specs": {
-      "Composição": "Sinergia de agentes alcalinos concentrados de alta reatividade.",
-      "Ação Principal": "Degradação química de gorduras, cabelos e detritos orgânicos.",
-      "Indicação": "Ideal para pias, ralos e tubulações residenciais ou comerciais."
+      "Mecanismo": "Sinergia de agentes alcalinos concentrados de alta reatividade",
+      "Resultado": "Degradação química de gorduras, cabelos e detritos orgânicos",
+      "Indicação": "Ideal para pias, ralos e tubulações"
     },
     "img": "fotos/Desentupidor Start Pro.webp",
     "caution": "Não use em tubulações de alumínio. Nunca misture com outros ácidos."
@@ -450,9 +484,9 @@
     "name": "Tira Ferrugem Azulim",
     "desc": "Tecnologia quelante avançada que isola e remove óxidos de ferro sem a necessidade de abrasão mecânica, preservando a superfície.",
     "specs": {
-      "Mecanismo Técnico": "Reação química ácida específica para a desoxidação metálica.",
-      "Resultado": "Recuperação imediata do brilho original e remoção total de manchas.",
-      "Indicação": "Metais ferrosos, ferramentas e superfícies oxidadas."
+      "Mecanismo": "Reação química ácida específica para a desoxidação metálica",
+      "Resultado": "Recuperação imediata do brilho original e remoção total de manchas",
+      "Indicação": "Metais ferrosos, ferramentas e superfícies oxidadas"
     },
     "img": "fotos/Tira Ferrugem Azulim.webp",
     "caution": "Não deixar agir excessivamente em metais delicados. Lavar após uso."
@@ -462,9 +496,9 @@
     "name": "Remov. Mágico Sujeira Pesada",
     "desc": "O ápice da desengorduração industrial. Projetado para romper moléculas de gordura carbonizada em ambientes de alta demanda.",
     "specs": {
-      "Ação Química": "Detergente alcalino concentrado de ultra performance.",
-      "Indicação de Uso": "Cozinhas industriais, garagens, fornos e áreas gourmet.",
-      "Vantagem": "Redução drástica no tempo de esfregação e esforço manual."
+      "Mecanismo": "Detergente alcalino concentrado de ultra performance",
+      "Resultado": "Redução drástica no tempo de esfregação e esforço manual",
+      "Indicação": "Cozinhas industriais, garagens, fornos e áreas gourmet"
     },
     "img": "fotos/Remov. Mágico Sujeira Pesada.webp",
     "caution": "Não utilizar em superfícies pintadas ou alumínio polido."
@@ -474,9 +508,9 @@
     "name": "Limpa Air Fryer / Forno",
     "desc": "Ação rápida de quebra de moléculas de gordura, eliminando a necessidade de esforço manual intenso em superfícies delicadas.",
     "specs": {
-      "Aplicação": "Spray de alta pressão para penetração profunda em frestas.",
-      "Eficiência": "Remoção de resíduos carbonizados e gorduras antigas.",
-      "Indicado para": "Air Fryers, micro-ondas, fornos e coifas."
+      "Mecanismo": "Spray de alta pressão para penetração profunda em frestas",
+      "Resultado": "Remoção de resíduos carbonizados e gorduras antigas",
+      "Indicação": "Air Fryers, micro-ondas, fornos e coifas"
     },
     "img": "fotos/LIMPA FORNOS E MICRO-ONDAS AZULIM 12X500ML.png",
     "caution": "Evite telas de controle eletrônico e borrachas de vedação."
@@ -486,9 +520,9 @@
     "name": "Limpa Cerâmicas e Azulejos",
     "desc": "Ação detergente especializada na remoção de névoas de gordura e depósitos calcários, devolvendo a luminosidade original às superfícies.",
     "specs": {
-      "pH": "Balanceado para preservação de cerâmicas e azulejos.",
-      "Vantagem": "Não deixa resíduos esbranquiçados após a secagem.",
-      "Indicação": "Banheiros, cozinhas e áreas externas com azulejos."
+      "Mecanismo": "pH balanceado para preservação de cerâmicas e azulejos",
+      "Resultado": "Remoção de resíduos sem deixar manchas esbranquiçadas",
+      "Indicação": "Banheiros, cozinhas e áreas externas com azulejos"
     },
     "img": "fotos/Limpa Cerâmicas e Azulejos.png",
     "caution": "Não indicado para pedras naturais porosas não tratadas."
@@ -498,9 +532,9 @@
     "name": "Limpa Pisos Laminados",
     "desc": "Proteção avançada com tecnologia de baixa umidade que evita a infiltração de água, prevenindo o estufamento do piso e prolongando sua vida útil.",
     "specs": {
-      "Secagem": "Evaporação ultra-rápida para evitar danos por água.",
-      "Ação": "Limpeza suave com agente protetor de superfície.",
-      "Diferencial": "Mantém o aspecto de novo sem criar camadas gordurosas."
+      "Mecanismo": "Evaporação ultra-rápida para evitar danos por água",
+      "Resultado": "Limpeza suave com agente protetor de superfície",
+      "Indicação": "Pisos laminados e vinílicos"
     },
     "img": "fotos/Limpa Pisos Laminados e Vinílicos.webp",
     "caution": "Não utilizar esponjas abrasivas."
@@ -510,9 +544,9 @@
     "name": "Limpa Porcelanato Lavanda",
     "desc": "Fórmula de alta precisão que preserva a integridade do brilho do porcelanato, eliminando manchas esbranquiçadas e resíduos de obra.",
     "specs": {
-      "Fragrância": "Lavanda relaxante com fixação de longa duração.",
-      "Ação Química": "Remoção de gorduras sem agredir o esmalte do piso.",
-      "Indicação": "Ideal para porcelanatos polidos e acetinados."
+      "Mecanismo": "Remoção de gorduras sem agredir o esmalte do piso",
+      "Resultado": "Brilho preservado e fragrância de longa duração",
+      "Indicação": "Ideal para porcelanatos polidos e acetinados"
     },
     "img": "fotos/Limpa Porcelanato Lavanda.webp",
     "caution": "Não utilizar produtos ácidos sobre o porcelanato."
@@ -522,9 +556,9 @@
     "name": "Limpa Rejuntes Start",
     "desc": "Poder de penetração profunda nos poros do rejunte, removendo o encardido acumulado e restaurando a cor original do material.",
     "specs": {
-      "Poder de Ação": "Agente de penetração profunda em porosidades.",
-      "Resultado": "Remoção de fungos e detritos orgânicos profundos.",
-      "Indicado para": "Rejuntes de cerâmicas, azulejos e porcelanatos."
+      "Mecanismo": "Agente de penetração profunda em porosidades",
+      "Resultado": "Remoção de fungos e detritos orgânicos profundos",
+      "Indicação": "Rejuntes de cerâmicas, azulejos e porcelanatos"
     },
     "img": "fotos/Limpa Rejuntes Start.webp",
     "caution": "Não usar em rejuntes quebrados ou soltando."
@@ -534,9 +568,9 @@
     "name": "Limpador em Gel Pinho",
     "desc": "A eficiência do desinfetante com a densidade do gel, proporcionando maior rendimento, menor desperdício e aroma duradouro.",
     "specs": {
-      "Tipo": "Detergente desinfetante em base de gel de alta viscosidade.",
-      "Ação": "Desinfecção profunda com fragrância prolongada.",
-      "Rendimento": "Alta aderência à superfície, reduzindo a quantidade de produto."
+      "Mecanismo": "Base de gel de alta viscosidade para máxima aderência",
+      "Resultado": "Desinfecção profunda com fragrância prolongada",
+      "Indicação": "Banheiros e saunas"
     },
     "img": "fotos/Limpador em Gel Pinho.webp",
     "caution": "Cuidado em superfícies que mancham com corantes."
@@ -544,11 +578,11 @@
   {
     "category": "Multiusos & Vidros",
     "name": "Multiuso / Álcool / Clareador",
-    "desc": "Equilíbrio perfeito entre eficiência de limpeza e segurança superficial. Formulado para a remoção rápida de resíduos cotidianos sem deixar rastros, ideal para superfícies que exigem brilho e pureza.",
+    "desc": "Equilíbrio perfeito entre eficiência de limpeza e segurança superficial. Formulado para a remoção rápida de resíduos cotidianos sem deixar rastros.",
     "specs": {
-      "Ação Multiuso": "Sinergia de surfactantes que dissolvem gorduras leves e poeira instantaneamente.",
-      "Versão Álcool": "Evaporação ultra-rápida, ideal para desinfecção rápida e secagem imediata.",
-      "Versão Clareador": "Agentes oxidantes suaves para remoção de manchas superficiais e realce de brancos."
+      "Mecanismo": "Sinergia de surfactantes que dissolvem gorduras leves e poeira instantaneamente",
+      "Resultado": "Limpeza imediata e brilho restaurado",
+      "Indicação": "Pisos vitrificados e porcelanato"
     },
     "img": "fotos/Multiuso Original Álcool  Clareador.webp",
     "caution": "Não usar em seda, veludo ou superfícies porosas."
@@ -556,10 +590,11 @@
   {
     "category": "Multiusos & Vidros",
     "name": "Limpa Vidros Spray",
-    "desc": "Tecnologia de transparência absoluta. Desenvolvido para a remoção de gorduras e impressões digitais sem a formação de névoas, garantindo visibilidade cristalina em segundos.",
+    "desc": "Tecnologia de transparência absoluta. Desenvolvido para a remoção de gorduras e impressões digitais sem a formação de névoas.",
     "specs": {
-      "Ação Química": "Solventes voláteis de alta pureza que evitam a redeposição de sujeira.",
-      "Resultado": "Acabamento invisível e brilho espelhado em vidros e espelhos."
+      "Mecanismo": "Solventes voláteis de alta pureza que evitam a redeposição de sujeira",
+      "Resultado": "Acabamento invisível e brilho espelhado em vidros e espelhos",
+      "Indicação": "Vidros, espelhos e superfícies reflexivas"
     },
     "img": "fotos/Limpa Vidros Spray.webp",
     "caution": "Não aplicar em molduras de madeira sem verniz."
@@ -567,10 +602,11 @@
   {
     "category": "Multiusos & Vidros",
     "name": "Kit Limpa Telas",
-    "desc": "Engenharia de proteção para displays de alta tecnologia. Limpeza antiestática avançada que remove partículas microscópicas sem comprometer as camadas oleofóbicas da tela.",
+    "desc": "Engenharia de proteção para displays de alta tecnologia. Limpeza antiestática avançada que remove partículas microscópicas.",
     "specs": {
-      "Segurança Técnica": "Livre de álcool e solventes corrosivos, preservando a vida útil do monitor.",
-      "Efeito Antiestático": "Repelência prolongada contra a atração de poeira e partículas."
+      "Mecanismo": "Livre de álcool e solventes corrosivos, preservando a vida útil do monitor",
+      "Resultado": "Repelência prolongada contra a atração de poeira",
+      "Indicação": "Monitores, TVs e smartphones"
     },
     "img": "fotos/Kit Limpa Telas.webp",
     "caution": "Aplique o líquido no pano, nunca diretamente na tela."
@@ -580,7 +616,9 @@
     "name": "Facilitador de Passar Tuff",
     "desc": "Otimização do tempo de ferro. Deslize superior com acabamento de lavanderia profissional.",
     "specs": {
-      "Ação": "Agente suavizante e antiestático para tecidos."
+      "Mecanismo": "Agente suavizante e antiestático para tecidos",
+      "Resultado": "Redução de rugas e deslize superior do ferro",
+      "Indicação": "Roupas que exigem passadoria"
     },
     "img": "fotos/Facilitador de Passar Roupas Tuff.webp",
     "caution": "Evite tecidos que mancham com facilidade."
@@ -590,7 +628,9 @@
     "name": "Revitalizador de Pneus Pretita",
     "desc": "Efeito \"pneu novo\" com durabilidade superior, protegendo a borracha contra o ressecamento.",
     "specs": {
-      "Base": "Emulsão de silicone de alta aderência."
+      "Mecanismo": "Emulsão de silicone de alta aderência",
+      "Resultado": "Brilho intenso e proteção contra raios UV",
+      "Indicação": "Pneus e borrachas automotivas"
     },
     "img": "fotos/Revitalizador de Pneus Pretita.webp",
     "caution": "Não aplicar na banda de rodagem para evitar derrapagens."
@@ -600,7 +640,9 @@
     "name": "Tira Risco e Descalcificante Indy",
     "desc": "Estética automotiva de precisão. Remove calcário e riscos superficiais sem agredir a pintura.",
     "specs": {
-      "Tecnologia": "Polímero abrasivo ultrafino."
+      "Mecanismo": "Polímero abrasivo ultrafino de alta precisão",
+      "Resultado": "Remoção de riscos superficiais e brilho restaurado",
+      "Indicação": "Latarias, rodas e plásticos automotivos"
     },
     "img": "fotos/Tira Risco e Descalcificante Indy.webp",
     "caution": "Não utilizar em pinturas foscas ou plásticos sem proteção."
@@ -610,7 +652,9 @@
     "name": "Linha Perfumada (140ml)",
     "desc": "Concentração extrema para máximo rendimento. Apenas gotas para perfumar ambientes amplos.",
     "specs": {
-      "Fragrâncias": "Erva Doce, Eucalipto, Floral, Lavanda, Marine e Wave."
+      "Mecanismo": "Alta concentração de essências aromáticas de fixação prolongada",
+      "Resultado": "Ambientes perfumados por longos períodos",
+      "Indicação": "Aromatização de ambientes"
     },
     "img": "fotos/Linha Perfumada (140ml).webp",
     "caution": "Não indicado para esterilização hospitalar rigorosa."
