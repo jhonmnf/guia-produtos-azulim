@@ -1,148 +1,802 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Sofia ✨</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Guia de Produtos</title>
     <style>
+        /*
+           SISTEMA DE DESIGN - PALETA E VARIÁVEIS
+           Foco em: Profissionalismo, Tecnologia e Limpeza
+        */
+        :root {
+            --primary-dark: #0a0f1d;
+            --primary-accent: #22c55e;
+            --primary-accent-glow: rgba(34, 197, 94, 0.4);
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-highlight: #4ade80;
+            --danger: #ef4444;
+            --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--primary-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
             scroll-behavior: smooth;
-            background-color: #fffafb;
         }
-        .font-handwritten {
-            font-family: 'Dancing Script', cursive;
+
+        /*
+           SISTEMA DE FUNDO ORGÂNICO (Bolhas Dinâmicas)
+           Cria profundidade visual sem impactar a performance
+        */
+        .bg-visuals {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle at 50% 0%, #1e293b 0%, #0a0f1d 100%);
+            overflow: hidden;
         }
-        .heart {
+
+        .bubble {
             position: absolute;
-            pointer-events: none;
-            animation: float 3s linear infinite;
+            background: var(--primary-accent-glow);
+            filter: blur(60px);
+            border-radius: 50%;
+            z-index: -1;
+            animation: move linear infinite;
+        }
+
+        .bubble-1 { width: 400px; height: 400px; top: -10%; left: -10%; animation-duration: 20s; }
+        .bubble-2 { width: 300px; height: 300px; bottom: -5%; right: -5%; animation-duration: 25s; background: rgba(59, 130, 246, 0.2); }
+        .bubble-3 { width: 200px; height: 200px; top: 40%; left: 30%; animation-duration: 15s; opacity: 0.5; }
+
+        @keyframes move {
+            0% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, 50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0, 0) scale(1); }
+        }
+
+        /*
+           HEADER & HERO SECTION
+        */
+        header {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            background: linear-gradient(to bottom, #fff 30%, var(--primary-accent));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 30px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        /* SEARCH BAR SYSTEM */
+        .search-container {
+            margin-bottom: 40px;
+            animation: fadeInUp 1.4s ease-out;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .search-bar {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(10px);
+            padding: 12px 25px;
+            border-radius: 100px;
+            width: 100%;
+            max-width: 500px;
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+            outline: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .search-bar:focus {
+            border-color: var(--primary-accent);
+            box-shadow: 0 0 20px var(--primary-accent-glow);
+            background: rgba(255, 255, 255, 0.08);
+            width: 550px;
+        }
+
+        /*
+           ESTRUTURA DE SEÇÕES
+        */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .category-section {
+            margin-bottom: 120px;
             opacity: 0;
+            transform: translateY(30px);
+            transition: var(--transition);
         }
-        @keyframes float {
-            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+
+        .category-section.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
-        .photo-card:hover {
-            transform: scale(1.05) rotate(2deg);
-            transition: all 0.3s ease;
+
+        /* MODAL SYSTEM */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 15, 29, 0.7);
+            backdrop-filter: blur(25px);
+            z-index: 1000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
         }
-        .fade-in {
-            animation: fadeIn 1.5s ease-out forwards;
+
+        .modal.active {
+            display: flex;
+            opacity: 1;
         }
-        @keyframes fadeIn {
+
+        .modal-content {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 30px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+            transform: scale(0.9) translateY(20px);
+            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 20px var(--primary-accent-glow);
+            backdrop-filter: blur(10px);
+        }
+
+        .modal.active .modal-content {
+            transform: scale(1) translateY(0);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .close-modal:hover {
+            color: var(--primary-accent);
+        }
+
+        .modal-img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 20px;
+            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+        }
+
+        .modal-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .modal-desc {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 25px;
+        }
+
+        .modal-specs {
+            background: rgba(0,0,0,0.3);
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .modal-spec-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            border-bottom: 1px solid var(--glass-border);
+            padding-bottom: 5px;
+        }
+
+        .modal-spec-label {
+            color: var(--primary-accent);
+            font-weight: 800;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .modal-spec-value {
+            color: var(--text-main);
+            font-size: 0.9rem;
+            text-align: right;
+        }
+
+        .modal-caution {
+            margin-top: 20px;
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid var(--danger);
+            padding: 15px;
+            border-radius: 0 10px 10px 0;
+            font-size: 0.85rem;
+            color: #fca5a5;
+        }
+
+        .product-card {
+            cursor: pointer;
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .category-header h2 {
+            font-size: 2rem;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        .category-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--primary-accent);
+            border-radius: 2px;
+        }
+
+        /*
+           MODERN PRODUCT GRID (Diferenciado)
+        */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            padding: 40px;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: var(--primary-accent);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 20px var(--primary-accent-glow);
+        }
+
+        .product-img-container {
+            width: 100%;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            transition: var(--transition);
+            background: radial-gradient(circle, rgba(34, 197, 94, 0.15) 0%, transparent 70%);
+            border-radius: 20px;
+        }
+
+        .product-img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            filter: drop-shadow(0 15px 25px rgba(0,0,0,0.6));
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-img {
+            transform: scale(1.1) rotate(2deg);
+        }
+
+        .product-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .product-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-bottom: 25px;
+            min-height: 60px;
+        }
+
+        .tech-specs {
+            background: rgba(0,0,0,0.2);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .spec-item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 12px;
+        }
+
+        .spec-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--primary-accent);
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .spec-value {
+            font-size: 0.9rem;
+            color: var(--text-main);
+        }
+
+        .caution-box {
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid var(--danger);
+            padding: 15px;
+            border-radius: 0 10px 10px 0;
+            font-size: 0.85rem;
+            color: #fca5a5;
+            margin-top: auto;
+        }
+
+        /*
+           FOOTER
+        */
+        footer {
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid var(--glass-border);
+            margin-top: 100px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-brand {
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /*
+           ANIMATIONS
+        */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes modalContentFadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+        .modal.active .modal-title,
+        .modal.active .modal-desc,
+        .modal.active .modal-specs,
+        .modal.active .modal-caution {
+            animation: modalContentFadeIn 0.5s ease-out forwards;
+        }
+
+        .modal.active .modal-title { animation-delay: 0.1s; }
+        .modal.active .modal-desc { animation-delay: 0.2s; }
+        .modal.active .modal-specs { animation-delay: 0.3s; }
+        .modal.active .modal-caution { animation-delay: 0.4s; }
+
+        .modal-title, .modal-desc, .modal-specs, .modal-caution {
+            opacity: 0;
+        }
+
+        /* Efeito de Voo da Imagem */
+        .img-fly {
+            position: fixed;
+            z-index: 2000;
+            pointer-events: none;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            object-fit: contain;
+        }
+
+        /*
+           SISTEMA DE LOGIN (Overlay)
+        */
+        .login-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-dark);
+            z-index: 2001;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            backdrop-filter: blur(20px);
+        }
+
+        .login-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+            transform: scale(1.1);
+        }
+
+        .login-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            backdrop-filter: blur(15px);
+            padding: 50px 40px;
+            border-radius: 40px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5), 0 0 20px var(--primary-accent-glow);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .login-card h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--text-main);
+            font-weight: 800;
+        }
+
+        .login-field {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .login-field label {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--primary-accent);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-left: 5px;
+        }
+
+        .login-field input {
+            width: 100%;
+            background: rgba(0,0,0,0.3);
+            border: 1px solid var(--glass-border);
+            padding: 15px 20px;
+            border-radius: 15px;
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .login-field input:focus {
+            outline: none;
+            border-color: var(--primary-accent);
+            box-shadow: 0 0 15px var(--primary-accent-glow);
+            background: rgba(0,0,0,0.5);
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--primary-accent);
+            color: var(--primary-dark);
+            border: none;
+            border-radius: 15px;
+            font-weight: 800;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px var(--primary-accent-glow);
+            filter: brightness(1.1);
+        }
+
+        .login-footer {
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .login-footer a {
+            color: var(--primary-accent);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .login-footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
-<body class="text-gray-700 overflow-x-hidden">
+<body>
+    <div class="bg-visuals">
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+    </div>
 
-    <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center text-center p-6 overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0 bg-gradient-to-b from-pink-100/50 to-transparent"></div>
-            <img src="assets/images/Captura de tela 2026-06-09 222730.png" class="w-full h-full object-cover opacity-30 blur-sm" alt="Background">
+    <header>
+        <h1 class="hero-title">Guia de Produtos</h1>
+        <p class="hero-subtitle">A convergência entre química avançada e performance de limpeza. Explore a engenharia por trás de cada produto.</p>
+        <div class="search-container">
+            <input type="text" id="productSearch" class="search-bar" placeholder="Pesquisar produto ou tecnologia...">
         </div>
+        <div style="animation: bounce 2s infinite; color: var(--primary-accent); font-size: 2rem;">↓</div>
+    </header>
 
-        <div class="z-10 fade-in">
-            <h1 class="text-5xl md:text-7xl font-handwritten text-pink-500 mb-4 drop-shadow-sm">Para Sofia ✨</h1>
-            <p class="text-lg md:text-xl text-gray-500 font-light italic mb-8">Existem coisas que as palavras não conseguem dizer, mas o coração guarda...</p>
-            <a href="#gallery" class="bg-pink-400 hover:bg-pink-500 text-white px-8 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-pink-200 inline-block font-medium">
-                Descubra o que eu sinto...
-            </a>
+    <div class="container" id="product-container">
+        <!-- Produtos carregados dinamicamente aqui -->
+    </div>
+
+    <!-- MODAL SYSTEM -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close-modal">&times;</span>
+            <img id="modalImg" class="modal-img" src="" alt="Produto">
+            <h2 id="modalTitle" class="modal-title"></h2>
+            <p id="modalDesc" class="modal-desc"></p>
+            <div id="modalSpecs" class="modal-specs"></div>
+            <div id="modalCaution" class="modal-caution"></div>
         </div>
-    </section>
+    </div>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-20 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl md:text-4xl text-center font-handwritten text-pink-600 mb-16">Observando Você</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="photo-card bg-white p-3 rounded-2xl shadow-sm border border-pink-50 flex flex-col items-center">
-                <img src="assets/images/Captura de tela 2026-06-09 222730.png" class="rounded-xl w-full h-64 object-cover mb-4" alt="Foto Sofia">
-                <p class="font-handwritten text-xl text-pink-400 text-center px-2">"A nerdola mais linda que eu conheço 🤓"</p>
-            </div>
-            <div class="photo-card bg-white p-3 rounded-2xl shadow-sm border border-pink-50 flex flex-col items-center mt-8">
-                <img src="assets/images/Captura de tela 2026-06-09 223017.png" class="rounded-xl w-full h-64 object-cover mb-4" alt="Foto Sofia">
-                <p class="font-handwritten text-xl text-pink-400 text-center px-2">"Tão fofa que chega a ser impossível não amar 🌸"</p>
-            </div>
-            <div class="photo-card bg-white p-3 rounded-2xl shadow-sm border border-pink-50 flex flex-col items-center">
-                <img src="assets/images/Captura de tela 2026-06-09 223027.png" class="rounded-xl w-full h-64 object-cover mb-4" alt="Foto Sofia">
-                <p class="font-handwritten text-xl text-pink-400 text-center px-2">"Seu jeito atencioso aquece meu coração ❤️"</p>
-            </div>
-            <div class="photo-card bg-white p-3 rounded-2xl shadow-sm border border-pink-50 flex flex-col items-center">
-                <img src="assets/images/Captura de tela 2026-06-09 223053.png" class="rounded-xl w-full h-64 object-cover mb-4" alt="Foto Sofia">
-                <p class="font-handwritten text-xl text-pink-400 text-center px-2">"Admiro tanto a sua força e o quanto você é esforçada ✨"</p>
-            </div>
-            <div class="photo-card bg-white p-3 rounded-2xl shadow-sm border border-pink-50 flex flex-col items-center mt-8">
-                <img src="assets/images/Captura de tela 2026-06-09 223302.png" class="rounded-xl w-full h-64 object-cover mb-4" alt="Foto Sofia">
-                <p class="font-handwritten text-xl text-pink-400 text-center px-2">"Uma delicadeza que encanta tudo ao redor ☁️"</p>
-            </div>
-            <div class="photo-card bg-white p-3 rounded-2xl shadow-sm border border-pink-50 flex flex-col items-center">
-                <img src="assets/images/Captura de tela 2026-06-09 223309.png" class="rounded-xl w-full h-64 object-cover mb-4" alt="Foto Sofia">
-                <p class="font-handwritten text-xl text-pink-400 text-center px-2">"Sua gentileza é a coisa mais rara e linda de se ver 🌟"</p>
-            </div>
-            <div class="photo-card bg-white p-3 rounded-2xl shadow-sm border border-pink-50 flex flex-col items-center">
-                <img src="assets/images/Captura de tela 2026-06-09 223511.png" class="rounded-xl w-full h-64 object-cover mb-4" alt="Foto Sofia">
-                <p class="font-handwritten text-xl text-pink-400 text-center px-2">"A alma mais justa e iluminada que já conheci ⚖️"</p>
-            </div>
-            <div class="photo-card bg-white p-3 rounded-2xl shadow-sm border border-pink-50 flex flex-col items-center mt-8">
-                <img src="assets/images/Captura de tela 2026-06-09 223621.png" class="rounded-xl w-full h-64 object-cover mb-4" alt="Foto Sofia">
-                <p class="font-handwritten text-xl text-pink-400 text-center px-2">"Simplesmente formosa, por dentro e por fora 💖"</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Feelings Section -->
-    <section class="py-20 px-6 bg-pink-50 text-center">
-        <div class="max-w-3xl mx-auto fade-in">
-            <h2 class="text-3xl md:text-4xl font-handwritten text-pink-600 mb-8">Para Sofia...</h2>
-            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-inner border border-pink-100 italic text-lg leading-relaxed text-gray-600 font-light">
-                <p class="mb-6">
-                    Há coisas que as palavras não conseguem descrever, Sofia, e o que eu sinto por você é exatamente assim. Passo horas apenas te observando, admirando cada gesto, cada detalhe do seu jeito de ser. Sinto que, de alguma forma, a gente se completa, embora ainda exista aquela peça faltando, aquele silêncio que espera para ser preenchido.
-                </p>
-                <p class="mb-6">
-                    Mas é no seu olhar que eu me perco completamente. É estranho e fascinante como eu ainda me estremeço cada vez que seus olhos encontram os meus. Esse sentimento me acompanha em cada segundo, em cada hora do meu dia.
-                </p>
-                <p>
-                    Muitas vezes sinto que deveria te dizer tudo, abrir todo esse meu mundo para você. Mas o medo, esse medo bobo e imenso, sussurra que talvez eu pudesse perder os meus dias se as coisas não fossem como eu sonho. Por enquanto, guardo tudo aqui, nesse pequeno refúgio digital, esperando que o destino ou a coragem me levem até você.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-12 text-center">
-        <button id="heart-button" class="bg-white text-pink-500 p-4 rounded-full shadow-md hover:shadow-lg transition-all duration-300 animate-bounce cursor-pointer">
-            <span class="text-2xl">❤️</span>
-        </button>
-        <p class="mt-4 text-sm text-gray-400 italic">Feito com todo carinho para você ✨</p>
+    <footer>
+        <span class="footer-brand">Guia de Produtos</span>
+        <p>&copy; 2026 - Desenvolvido por <strong>jhon</strong>. Todos os direitos reservados.</p>
     </footer>
 
     <script>
-        const heartButton = document.getElementById('heart-button');
-        heartButton.addEventListener('click', () => {
-            for(let i=0; i<15; i++) {
-                createHeart();
+        // Variáveis globais para facilitar acesso
+        const container = document.getElementById('product-container');
+        const modal = document.getElementById('productModal');
+        const closeModal = document.getElementById('closeModal');
+        const modalImg = document.getElementById('modalImg');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDesc = document.getElementById('modalDesc');
+        const modalSpecs = document.getElementById('modalSpecs');
+        const modalCaution = document.getElementById('modalCaution');
+        const searchInput = document.getElementById('productSearch');
+
+        let allProducts = [];
+
+        // Renderiza a grade de produtos
+        function renderProducts(products) {
+            container.innerHTML = '';
+
+            // Agrupar por categoria
+            const categories = [...new Set(products.map(p => p.category))];
+
+            categories.forEach(cat => {
+                const section = document.createElement('section');
+                section.className = 'category-section';
+                section.id = cat.toLowerCase().replace(/\s+/g, '-');
+
+                section.innerHTML = `
+                    <div class="category-header">
+                        <h2>${cat}</h2>
+                    </div>
+                    <div class="product-grid">
+                        ${products.filter(p => p.category === cat).map(p => `
+                            <div class="product-card" data-name="${p.name}" data-desc="${p.desc}">
+                                <div class="product-img-container">
+                                    <img src="${p.img}" class="product-img" alt="${p.name}">
+                                </div>
+                                <div class="product-name">${p.name}</div>
+                                <p class="product-desc">${p.desc}</p>
+                                <div class="tech-specs">
+                                    ${Object.entries(p.specs).map(([label, value]) => `
+                                        <div class="spec-item">
+                                            <span class="spec-label">${label}</span>
+                                            <span class="spec-value">${value}</span>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                                ${p.caution ? `<div class="caution-box">⚠️ ${p.caution}</div>` : ''}
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                container.appendChild(section);
+            });
+
+            // Reativar IntersectionObserver para as novas seções
+            initScrollReveal();
+        }
+
+        // Efeito de revelação ao rolar (Scroll Reveal)
+        function initScrollReveal() {
+            const observerOptions = { threshold: 0.1 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersectIntersecting || entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.category-section').forEach(section => {
+                observer.observe(section);
+            });
+        }
+
+        // LOGICA DO MODAL
+        document.addEventListener('click', (e) => {
+            if (e.target.closest('.product-card')) {
+                const card = e.target.closest('.product-card');
+                const imgElement = card.querySelector('.product-img');
+                const imgRect = imgElement.getBoundingClientRect();
+
+                // 1. Criar a imagem "voadora"
+                const flyImg = document.createElement('img');
+                flyImg.src = imgElement.src;
+                flyImg.className = 'img-fly';
+                flyImg.style.top = imgRect.top + 'px';
+                flyImg.style.left = imgRect.left + 'px';
+                flyImg.style.width = imgRect.width + 'px';
+                flyImg.style.height = imgRect.height + 'px';
+                document.body.appendChild(flyImg);
+
+                // Buscar dados do produto via data-name ou via JSON
+                const productName = card.querySelector('.product-name').innerText;
+                const product = allProducts.find(p => p.name === productName);
+
+                if (product) {
+                    // Preenche o modal
+                    modalImg.style.opacity = '0';
+                    modalImg.src = product.img;
+                    modalTitle.innerText = product.name;
+                    modalDesc.innerText = product.desc;
+
+                    let specsHtml = '';
+                    Object.entries(product.specs).forEach(([label, value]) => {
+                        specsHtml += `
+                            <div class="modal-spec-item">
+                                <span class="modal-spec-label">${label}</span>
+                                <span class="modal-spec-value">${value}</span>
+                            </div>`;
+                    });
+                    modalSpecs.innerHTML = specsHtml;
+                    modalCaution.innerText = product.caution ? `⚠️ ${product.caution}` : '';
+                    modalCaution.style.display = product.caution ? 'block' : 'none';
+
+                    // Abre o modal
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+
+                    // 2. Animar a imagem voadora para a posição do modal
+                    setTimeout(() => {
+                        const targetRect = modalImg.getBoundingClientRect();
+                        flyImg.style.top = targetRect.top + 'px';
+                        flyImg.style.left = targetRect.left + 'px';
+                        flyImg.style.width = targetRect.width + 'px';
+                        flyImg.style.height = targetRect.height + 'px';
+                    }, 10);
+
+                    // 3. Finalizar transição
+                    setTimeout(() => {
+                        modalImg.style.opacity = '1';
+                        flyImg.remove();
+                    }, 500);
+                }
             }
         });
 
-        function createHeart() {
-            const heart = document.createElement('div');
-            heart.classList.add('heart');
-            heart.innerHTML = '❤️';
-            heart.style.left = Math.random() * 100 + 'vw';
-            heart.style.animationDuration = (Math.random() * 2 + 3) + 's';
-            heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
-            document.body.appendChild(heart);
+        closeModal.addEventListener('click', () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
 
-            setTimeout(() => {
-                heart.remove();
-            }, 3000);
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // LOGICA DE PESQUISA
+        searchInput.addEventListener('input', () => {
+            const term = searchInput.value.toLowerCase();
+            const cards = document.querySelectorAll('.product-card');
+
+            cards.forEach(card => {
+                const name = card.querySelector('.product-name').innerText.toLowerCase();
+                const desc = card.querySelector('.product-desc').innerText.toLowerCase();
+
+                if (name.includes(term) || desc.includes(term)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Carregamento Inicial
+        async function init() {
+            try {
+                const response = await fetch('products_data.json');
+                allProducts = await response.json();
+                renderProducts(allProducts);
+            } catch (error) {
+                console.error('Erro ao carregar produtos:', error);
+                container.innerHTML = '<p style="text-align:center; color:var(--danger);">Erro ao carregar o catálogo de produtos.</p>';
+            }
         }
+
+        init();
     </script>
 </body>
 </html>
