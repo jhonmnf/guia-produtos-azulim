@@ -1,21 +1,31 @@
 # Guia de Produtos Azulim
 
-Repositório com uma base de dados de produtos Azulim, fotos e material de consulta.
+Catálogo web de produtos Azulim com busca por nome ou descrição, organização por categoria e visualização de detalhes.
 
-## Conteúdo atual
+## Executar localmente
 
-- `products_data.json`: dados dos produtos, categorias, descrições, especificações e caminhos das imagens.
-- `fotos/`: imagens de produtos.
+A página carrega `products_data.json` pelo navegador, por isso use um servidor HTTP em vez de abrir o HTML diretamente.
+
+Com Python instalado, execute na raiz do repositório:
+
+```bash
+python -m http.server 8000
+```
+
+Acesse `http://localhost:8000`. O site é estático e também pode ser publicado no GitHub Pages.
+
+## Estrutura
+
+- `index.html`: catálogo, busca e detalhes dos produtos.
+- `products_data.json`: base do catálogo.
+- `fotos/`: imagens dos produtos.
 - `fotos de erros ou info/`: imagens de referência.
-- `skills/criando-pdfs/temp_docs/guia_azulim_v1.md`: rascunho de material de consulta.
-- `index.html`: atualmente contém uma página pessoal, sem exibir o catálogo de produtos.
+- `skills/`: materiais e instruções auxiliares.
 
-## Status
+## Manutenção
 
-O conteúdo do catálogo e o da página inicial precisam ser alinhados antes de apresentar este repositório como um guia web de produtos. Os caminhos de imagens usados pela página inicial também precisam de revisão.
+Ao atualizar o catálogo, mantenha cada caminho de imagem correspondente a um arquivo em `fotos/`. Confira a pesquisa, a abertura dos detalhes e a exibição em celular antes de publicar.
 
-## Consultar os dados
-
-Abra `products_data.json` para consultar a base. Mantenha os caminhos em `fotos/` ao mover ou editar as imagens.
+A página do catálogo foi recuperada da versão `adf40af`, anterior à substituição por conteúdo pessoal. A versão pessoal continua preservada no histórico Git.
 
 Não há processo de build ou testes automatizados configurados.
